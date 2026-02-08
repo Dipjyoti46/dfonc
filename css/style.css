@@ -1,0 +1,1410 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #3f3f3f;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1632px;
+    margin: 0 auto;
+    padding: 0 144px;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    width: 390px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0 20px 20px 0;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 50px;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.menu-close {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-links {
+    margin-top: 125px;
+}
+
+.menu-links a {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #3f3f3f;
+    text-decoration: none;
+    margin-bottom: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-links a.active {
+    font-weight: 700;
+    font-size: 30px;
+    color: #3041a0;
+}
+
+.menu-links a:hover {
+    color: #3041a0;
+}
+
+.menu-divider {
+    width: 278px;
+    height: 1px;
+    background: #ccc;
+    margin: 26px 0;
+}
+
+.side-menu .social-media {
+    position: absolute;
+    bottom: 280px;
+    left: 70px;
+    display: flex;
+    gap: 29px;
+    align-items: center;
+}
+
+.side-menu .social-media a img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.side-menu .social-media a:hover img {
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background: url('../images/hero-bg.png') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0.2) 100%);
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.hero-social {
+    position: absolute;
+    bottom: 120px;
+    left: 30px;
+    z-index: 10;
+    display: flex;
+    gap: 15px;
+}
+
+.hero-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.hero-social a:hover {
+    opacity: 0.7;
+}
+
+.hero-social img {
+    width: 18px;
+    height: 18px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 220px 50px;
+    max-width: 1632px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 150px;
+}
+
+.logo-section img {
+    width: 339.706px;
+    height: 217.889px;
+    aspect-ratio: 145/93;
+    position: absolute;
+}
+
+
+.iitg-logo {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.conference-branding {
+    margin-left: 175px;
+    padding-top: 165px;
+    position: relative;
+    z-index: 2;
+}
+
+.indis-logo {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.indis-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.indis-year {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.indis-tagline {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.hero-title-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    margin-top: -150px;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.hero-title-section h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.15;
+    max-width: 600px;
+}
+
+.date-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.date-section p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.date-divider {
+    width: 2px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.conference-date {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.organizers {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 180px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
+    color: white;
+}
+
+.organizer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.org-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.org-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.organizer p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.co-organizers {
+    text-align: center;
+    justify-items: center;
+}
+
+.co-organizers p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20.445px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.co-org-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.co-org-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.co-org-logos img {
+    width: 143px;
+    height: 43px;
+    aspect-ratio: 285/86;
+
+}
+
+.sponsor-logo {
+    width: 285px;
+    height: 86px;
+    aspect-ratio: 285/86;
+}
+
+/* Timeline Section */
+.timeline-section {
+    position: relative;
+    padding: 100px 50px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.timeline-above-bar {
+    width: 2px;
+    height: 29px;
+    margin: 0 auto 0px;
+}
+
+#timeline-above-bar-1 {
+    background-color: #30439F;
+}
+
+#timeline-above-bar-2 {
+    background-color: #FAA313;
+}
+
+#timeline-above-bar-3 {
+    background-color: #E88018;
+}
+
+#timeline-above-bar-4 {
+    background-color: #A71A19;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 46px;
+}
+
+.timeline-bar {
+    position: absolute;
+    top: 50%;
+    height: 46px;
+    border-radius: 0;
+    transform: translateY(-50%);
+}
+
+#timeline-bar-1 {
+    background: #30439F;
+    width: 100%;
+    height: 46px;
+    right: 0;
+    border-radius: 23px;
+    z-index: 1;
+}
+
+#timeline-bar-2 {
+    background: #FAA313;
+    width: 75%;
+    height: 46px;
+    right: 0;
+    border-radius: 23px;
+    z-index: 2;
+}
+
+#timeline-bar-3 {
+    background: #E88018;
+    width: 50%;
+    height: 46px;
+    right: 0;
+    border-radius: 23px;
+    z-index: 3;
+}
+
+#timeline-bar-4 {
+    background: #A71A19;
+    width: 30%;
+    height: 46px;
+    right: 0;
+    border-radius: 23px;
+    z-index: 4;
+}
+
+.timeline-content {
+    position: absolute;
+    text-align: center;
+    z-index: 20;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#timeline-content-1 {
+    top: 45px;
+    left: 205px;
+    transform: translateX(-50%);
+}
+
+#timeline-content-1 .timeline-date {
+    color: #30439F;
+}
+
+#timeline-content-1 .timeline-title {
+    color: rgb(0, 0, 0);
+}
+
+#timeline-content-2 {
+    bottom: 45px;
+    left: 205px;
+    transform: translateX(-50%);
+}
+
+#timeline-content-2 .timeline-date {
+    color: #FAA313;
+}
+
+#timeline-content-2 .timeline-title {
+    color: #000000;
+}
+
+#timeline-content-3 {
+    top: 45px;
+    left: 175px;
+    transform: translateX(-50%);
+}
+
+#timeline-content-3 .timeline-date {
+    color: #E88018;
+}
+
+#timeline-content-3 .timeline-title {
+    color: #000000;
+}
+
+#timeline-content-4 {
+    left: 210px;
+    bottom: 45px;
+    transform: translateX(-50%);
+}
+
+#timeline-content-4 .timeline-date {
+    color: #A71A19;
+}
+
+#timeline-content-4 .timeline-title {
+    color: #000000;
+}
+
+#timeline-dot-1 {
+    width: 22px;
+    height: 22px;
+    background: #30439F;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+#timeline-dot-2 {
+    width: 22px;
+    height: 22px;
+    background: #FAA313;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+#timeline-dot-3 {
+    width: 22px;
+    height: 22px;
+    background: #E88018;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+#timeline-dot-4 {
+    width: 22px;
+    height: 22px;
+    background: #A71A19;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.timeline-date {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #A5262B;
+    display: block;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+
+.timeline-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 80px 144px;
+    background: #fff;
+}
+
+.overview-section .container {
+    display: flex;
+    gap: 80px;
+    padding: 0;
+}
+
+.overview-content {
+    flex: 1;
+    max-width: 974px;
+}
+
+.overview-content h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    color: #2e3f92;
+    margin-bottom: 23px;
+}
+
+.overview-content p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+}
+
+.overview-sidebar {
+    padding-left: 50px;
+    border-left: 2px solid #333;
+}
+
+.overview-sidebar h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.design-icon img {
+    width: 137px;
+    height: 137px;
+}
+
+.conference-description {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    max-width: 974px;
+    margin-top: 40px;
+}
+
+/* Call for Papers Section */
+.call-for-papers {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.call-for-papers h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    color: #e49514;
+    margin-bottom: 50px;
+}
+
+.cfp-intro {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 60px;
+}
+
+.cfp-item {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.cfp-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.cfp-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.cfp-item p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #353535;
+    max-width: 675px;
+}
+
+.cfp-item strong {
+    font-weight: 700;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.topic-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    min-height: 248px;
+}
+
+.topic-badge {
+    display: inline-block;
+    background: rgba(75, 107, 251, 0.05);
+    color: #4b6bfb;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.topic-card p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #3b3b3d;
+    flex: 1;
+}
+
+.topic-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.topic-footer span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4f5054;
+}
+
+.topic-footer .arrow {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Important Dates Section */
+.important-dates {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.important-dates h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    color: #2e3f92;
+    margin-bottom: 50px;
+}
+
+.dates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.date-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px 2px rgba(0, 0, 0, 0.15);
+    padding: 38px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 232px;
+}
+
+.date-icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+.date-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.date-card p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #353535;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.date-badge {
+    display: inline-block;
+    background: rgba(250, 163, 19, 0.05);
+    color: #faa313;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+/* Organisation Section */
+.organisation-section {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.organisation-section h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    color: #2e3f92;
+    margin-bottom: 40px;
+}
+
+.org-description {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.committee-card {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 12px;
+    padding: 40px 38px;
+    min-height: 439px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    width: 65px;
+    height: 65px;
+}
+
+.card-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-number {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.committee-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.committee-card h3 .arrow {
+    font-size: 16px;
+    color: #666;
+}
+
+.committee-card p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.committee-card .secondary-text {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Jury Section */
+.jury-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.jury-section h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    color: #2e3f92;
+    margin-bottom: 50px;
+}
+
+.jury-navigation {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.nav-arrow:hover {
+    background: #2e3f92;
+    color: #fff;
+}
+
+.nav-arrow.left {
+    left: -50px;
+}
+
+.nav-arrow.right {
+    right: -50px;
+}
+
+.jury-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 38px;
+}
+
+.jury-card {
+    background: linear-gradient(180deg, #f5f5f5 0%, #fff 100%);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.jury-image {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.jury-info {
+    padding: 20px;
+}
+
+.jury-info h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.jury-info .job-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 14px;
+}
+
+.jury-info .bio {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.jury-social {
+    display: flex;
+    gap: 20px;
+}
+
+.jury-social a img {
+    width: 26px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.jury-social a:hover img {
+    opacity: 1;
+}
+
+.jury-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.jury-dots .dot {
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.jury-dots .dot.active {
+    background: #2e3f92;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 50px 144px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-iitg {
+    width: 184px;
+    height: auto;
+}
+
+.footer-branding {
+    padding-top: 90px;
+}
+
+.indis-logo-footer {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-branding .indis-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24.88px;
+    color: #000;
+}
+
+.footer-branding .indis-year {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14.93px;
+    color: #000;
+}
+
+.footer-branding p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 12.44px;
+    color: #000;
+    line-height: 1.4;
+}
+
+.footer-description {
+    max-width: 700px;
+}
+
+.footer-description p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #3f3f3f;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.footer-bottom p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+.footer-social {
+    display: flex;
+    gap: 29px;
+    align-items: center;
+}
+
+.footer-social a img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover img {
+    opacity: 1;
+}
+
+/* Decorative Elements */
+.overview-section::before,
+.call-for-papers::before,
+.important-dates::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 217px;
+    height: 1219px;
+    background: linear-gradient(180deg, #fff700 0%, #ff9500 50%, #ff0000 100%);
+    opacity: 0.3;
+}
+
+/* Media Overlay Background */
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Styles */
+@media (max-width: 1400px) {
+    .container {
+        padding: 0 80px;
+    }
+
+    .hero-content {
+        padding: 150px 80px 0;
+    }
+
+    .hero-title-section h1 {
+        font-size: 60px;
+    }
+
+    .overview-content h2,
+    .call-for-papers h2,
+    .important-dates h2,
+    .organisation-section h2,
+    .jury-section h2 {
+        font-size: 60px;
+    }
+
+    .topics-grid,
+    .dates-grid,
+    .committee-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jury-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .hero-content {
+        padding: 100px 40px 0;
+    }
+
+    .hero-title-section {
+        flex-direction: column;
+    }
+
+    .hero-title-section h1 {
+        font-size: 48px;
+    }
+
+    .overview-section .container {
+        flex-direction: column;
+    }
+
+    .overview-sidebar {
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid #333;
+        padding-top: 30px;
+    }
+
+    .cfp-intro {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .topics-grid,
+    .dates-grid,
+    .committee-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jury-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        left: -100%;
+        border-radius: 0;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        padding: 80px 20px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .iitg-logo {
+        width: 200px;
+    }
+
+    .hero-title-section h1 {
+        font-size: 36px;
+    }
+
+    .conference-date {
+        font-size: 24px;
+    }
+
+    .organizers {
+        flex-direction: column;
+        position: static;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .org-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .timeline-section {
+        padding: 40px 20px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .timeline-bar {
+        display: none;
+    }
+
+    .timeline-item.top .timeline-content,
+    .timeline-item:not(.top) .timeline-content {
+        position: static;
+        transform: none;
+    }
+
+    .overview-section,
+    .call-for-papers,
+    .important-dates,
+    .organisation-section,
+    .jury-section {
+        padding: 60px 20px;
+    }
+
+    .overview-content h2,
+    .call-for-papers h2,
+    .important-dates h2,
+    .organisation-section h2,
+    .jury-section h2 {
+        font-size: 40px;
+    }
+
+    .overview-content p,
+    .cfp-item p,
+    .date-card p,
+    .org-description {
+        font-size: 18px;
+    }
+
+    .jury-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
