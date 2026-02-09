@@ -395,6 +395,7 @@ body {
 
 /* Timeline Section */
 .timeline-section {
+    height: 50vh;
     position: relative;
     padding: 100px 50px;
     background: transparent;
@@ -429,7 +430,7 @@ body {
     align-items: center;
     position: relative;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 90px auto;
     padding: 0 40px;
     height: 46px;
 }
@@ -661,12 +662,14 @@ body {
 }
 
 .overview-sidebar h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.2;
-    color: #000;
-    margin-bottom: 40px;
+    color: #314AA7;
+    font-family: Archivo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 59.7px;
+    /* 119.4% */
+    letter-spacing: -1px;
 }
 
 .design-icon img {
@@ -686,17 +689,20 @@ body {
 
 /* Call for Papers Section */
 .call-for-papers {
+    width: 100%;
     padding: 100px 0;
     background: transparent;
 }
 
 .call-for-papers h2 {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 700;
+    color: #8D1A1A;
+    font-family: Archivo;
     font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 1;
-    color: #e49514;
     margin-bottom: 50px;
+    /* 99.625% */
 }
 
 .cfp-intro {
@@ -1233,7 +1239,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0px;
-    background-image: url(/images/images/bg_2.png);
+    background-image: url(/images/images/bg_1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1253,16 +1259,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0px;
-    background-image: url(/images/images/bg_1.png);
+    background-image: url(/images/images/bg_2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(0deg);
     z-index: -1;
 }
+
 .organisation-container {
     position: relative;
 }
+
 .organisation-container::before {
     content: '';
     position: absolute;
@@ -1270,7 +1278,26 @@ body {
     left: 0;
     right: 0;
     bottom: 0px;
-    background-image: url(/images/images/bg_3.png);
+    background-image: url(/images/images/bg_1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+.jury-container {
+    position: relative;
+}
+
+.jury-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url(/images/images/bg_2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
