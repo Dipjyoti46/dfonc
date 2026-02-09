@@ -397,7 +397,7 @@ body {
 .timeline-section {
     position: relative;
     padding: 100px 50px;
-    background: #ffffff;
+    background: transparent;
     overflow: hidden;
 }
 
@@ -624,7 +624,7 @@ body {
 /* Overview Section */
 .overview-section {
     padding: 80px 144px;
-    background: #fff;
+    background: transparent;
 }
 
 .overview-section .container {
@@ -687,7 +687,7 @@ body {
 /* Call for Papers Section */
 .call-for-papers {
     padding: 100px 0;
-    background: #fff;
+    background: transparent;
 }
 
 .call-for-papers h2 {
@@ -796,7 +796,7 @@ body {
 /* Important Dates Section */
 .important-dates {
     padding: 100px 0;
-    background: #fff;
+    background: transparent;
 }
 
 .important-dates h2 {
@@ -864,7 +864,7 @@ body {
 /* Organisation Section */
 .organisation-section {
     padding: 100px 0;
-    background: #f9f9f9;
+    background: transparent;
 }
 
 .organisation-section h2 {
@@ -892,10 +892,12 @@ body {
 }
 
 .committee-card {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-    border-radius: 12px;
+    background: white;
+    border-radius: 18px;
     padding: 40px 38px;
     min-height: 439px;
+    box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.16);
+
 }
 
 .card-header {
@@ -930,14 +932,15 @@ body {
 }
 
 .committee-card h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    color: #A71A19;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
     font-size: 20px;
-    color: #333;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    letter-spacing: -0.2px;
 }
 
 .committee-card h3 .arrow {
@@ -946,12 +949,15 @@ body {
 }
 
 .committee-card p {
-    font-family: 'Inter', sans-serif;
+    color: #434343;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #333;
-    margin-bottom: 16px;
+    line-height: 131%;
+    /* 23.58px */
+    letter-spacing: -0.18px;
 }
 
 .committee-card .secondary-text {
@@ -962,7 +968,7 @@ body {
 /* Jury Section */
 .jury-section {
     padding: 100px 0;
-    background: #fff;
+    background: transparent;
 }
 
 .jury-section h2 {
@@ -1196,17 +1202,80 @@ body {
     opacity: 1;
 }
 
-/* Decorative Elements */
-.overview-section::before,
-.call-for-papers::before,
-.important-dates::before {
+/* background images  */
+.timeline-overview-content {
+    position: relative;
+}
+
+.timeline-overview-content::before {
     content: '';
     position: absolute;
+    top: 0;
     left: 0;
-    width: 217px;
-    height: 1219px;
-    background: linear-gradient(180deg, #fff700 0%, #ff9500 50%, #ff0000 100%);
-    opacity: 0.3;
+    right: 0;
+    bottom: 150px;
+    background-image: url(/images/images/bg_6.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+.papers-section-content {
+    position: relative;
+}
+
+.papers-section-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url(/images/images/bg_2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+.impt-dates {
+    position: relative;
+    height: 100vh;
+}
+
+.impt-dates::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url(/images/images/bg_1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+.organisation-container {
+    position: relative;
+}
+.organisation-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url(/images/images/bg_3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
 }
 
 /* Media Overlay Background */
