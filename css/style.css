@@ -695,6 +695,19 @@ body {
     margin-top: 40px;
 }
 
+/* Align conference description with overview text column */
+.conference-description-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    max-width: 1632px;
+}
+
+.conference-description {
+    max-width: 974px;
+    margin-left: 0;
+}
+
 /* Call for Papers Section */
 .call-for-papers {
     width: 100%;
