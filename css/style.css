@@ -281,7 +281,12 @@ body {
     font-weight: 700;
     line-height: 1.15;
     max-width: 600px;
-    margin-top: 100px;
+    margin-top: 150px;
+}
+
+.hero-title-section h1 span {
+    font-family: fontface__阿里巴巴普惠体-regular__34__757830171295;
+    color: rgb(255, 255, 255);
 }
 
 .date-section {
@@ -346,10 +351,12 @@ body {
     height: 100%;
     object-fit: contain;
 }
-.event-date{
+
+.event-date {
     display: flex;
     flex-direction: column;
 }
+
 .organizer p {
     color: #FFF;
     font-family: Inter;
