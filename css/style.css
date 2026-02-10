@@ -636,14 +636,13 @@ body {
 
 /* Overview Section */
 .overview-section {
-    padding: 80px 144px;
+    padding: 100px 0;
     background: transparent;
 }
 
 .overview-section .container {
     display: flex;
     gap: 80px;
-    padding: 0;
 }
 
 .overview-content {
@@ -666,6 +665,7 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #000;
+    text-align: justify;
 }
 
 .overview-sidebar {
@@ -774,6 +774,37 @@ body {
     font-weight: 700;
 }
 
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.theme-section {
+    width: 100%;
+}
+
+.theme-title {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #2e3f92;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.theme-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #2e3f92 0%, #8D1A1A 100%);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
 .topics-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -830,6 +861,71 @@ body {
 .topic-footer .arrow {
     font-size: 18px;
     color: #333;
+}
+
+/* Types of Submissions Section */
+.types-submissions {
+    padding: 100px 0;
+    background: transparent;
+}
+
+.types-submissions h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    color: #2e3f92;
+    margin-bottom: 50px;
+}
+
+.submission-types {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.submission-type {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+    padding: 25px 30px;
+    border-left: 4px solid #2e3f92;
+    transition: all 0.3s ease;
+}
+
+.submission-type:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 2px rgba(0, 0, 0, 0.18);
+}
+
+.submission-type h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #2e3f92;
+    margin: 0;
+}
+
+.submission-note {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.submission-note p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #8D1A1A;
+    background: rgba(141, 26, 26, 0.05);
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(141, 26, 26, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Important Dates Section */
@@ -1286,6 +1382,7 @@ body {
 
     .overview-content h2,
     .call-for-papers h2,
+    .types-submissions h2,
     .important-dates h2,
     .organisation-section h2,
     .jury-section h2 {
@@ -1418,6 +1515,7 @@ body {
 
     .overview-section,
     .call-for-papers,
+    .types-submissions,
     .important-dates,
     .organisation-section,
     .jury-section {
@@ -1426,6 +1524,7 @@ body {
 
     .overview-content h2,
     .call-for-papers h2,
+    .types-submissions h2,
     .important-dates h2,
     .organisation-section h2,
     .jury-section h2 {
