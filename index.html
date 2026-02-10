@@ -1,737 +1,975 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      INDIS 2026 - International Conference on Design & Innovation Studies
+    </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=DM+Sans:wght@400;500&family=Inter:wght@300;400;500;600;700&family=PT+Sans:wght@400;700&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    INDIS 2026 - International Conference on Design & Innovation Studies
-  </title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=DM+Sans:wght@400;500&family=Inter:wght@300;400;500;600;700&family=PT+Sans:wght@400;700&family=Work+Sans:wght@400;500&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- Side Menu -->
+    <nav id="sideMenu" class="side-menu">
+      <button class="menu-close" onclick="toggleMenu()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M18 6L6 18M6 6L18 18"
+            stroke="#3f3f3f"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <div class="menu-links">
+        <a href="#" class="active">HOME</a>
+        <a href="#overview">Overview</a>
+        <a href="#call-for-papers">Call For Papers</a>
+        <a href="#important-dates">Important Dates</a>
+        <a href="#organisation">Organisations</a>
+        <div class="menu-divider"></div>
+        <a href="#submissions">Submissions</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/youtube.svg" alt="YouTube" /></a>
+      </div>
+    </nav>
 
-<body>
-  <!-- Side Menu -->
-  <nav id="sideMenu" class="side-menu">
-    <button class="menu-close" onclick="toggleMenu()">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M18 6L6 18M6 6L18 18" stroke="#3f3f3f" stroke-width="2" stroke-linecap="round" />
-      </svg>
-    </button>
-    <div class="menu-links">
-      <a href="#" class="active">HOME</a>
-      <a href="#overview">Overview</a>
-      <a href="#call-for-papers">Call For Papers</a>
-      <a href="#important-dates">Important Dates</a>
-      <a href="#organisation">Organisations</a>
-      <div class="menu-divider"></div>
-      <a href="#submissions">Submissions</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="social-media">
-      <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
-      <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
-      <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
-      <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
-      <a href="#"><img src="images/youtube.svg" alt="YouTube" /></a>
-    </div>
-  </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hamburger-menu" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <div class="hero-content">
-      <div class="logo-section">
-        <img src="images/indis_logo.png" alt="IIT Guwahati Logo" class="iitg-logo" />
-        <div class="conference-branding">
-          <div class="indis-logo">
-            <span class="indis-text">INDIS</span>
-            <span class="indis-year">2026</span>
+      <div class="hero-content">
+        <div class="logo-section">
+          <img
+            src="images/indis_logo.png"
+            alt="IIT Guwahati Logo"
+            class="iitg-logo"
+          />
+          <div class="conference-branding">
+            <div class="indis-logo">
+              <span class="indis-text">INDIS</span>
+              <span class="indis-year">2026</span>
+            </div>
+            <p class="indis-tagline">
+              Internation Conference on<br />Design & Innovation Studies
+            </p>
           </div>
-          <p class="indis-tagline">
-            Internation Conference on<br />Design & Innovation Studies
-          </p>
+        </div>
+        <div class="hero-title-section">
+          <div class="title-wrapper">
+            <h1>
+              International Conference on<br />Design & Innovation Studies
+            </h1>
+          </div>
+          <div class="date-section">
+            <div class="date-divider"></div>
+            <div class="event-date">
+                <div class="organizer">
+                  <div class="org-icon">
+                    <img src="images/iitg-logo.svg" alt="iitg-logo" />
+                  </div>
+                  <p>Department Of Design<br />IIT Guwahati</p>
+                </div>
+                <p class="conference-date">24th - 28th September 2026</p>
+            </div>
+          </div>
+        </div>
+        <div class="organizers">
+          <!-- <div class="organizer">
+            <div class="org-icon">
+              <img src="images/iitg-logo.svg" alt="iitg-logo" />
+            </div>
+            <p>Department Of Design<br />IIT Guwahati</p>
+          </div> -->
+          <div class="co-organizers">
+            <p class="co-org-label">Co-Organizer</p>
+            <div class="co-org-logos">
+              <img src="images/ld-logo.svg" alt="LD Logo" />
+              <img src="images/mit_2.svg" alt="Partner Logo" />
+            </div>
+          </div>
+          <!-- <img
+            src="images/partner-logo.png"
+            alt="Sponsor Logo"
+            class="sponsor-logo"
+          /> -->
         </div>
       </div>
-      <div class="hero-title-section">
-        <div class="title-wrapper">
-          <h1>
-            International Conference on<br />Design & Innovation Studies
-          </h1>
-        </div>
-        <div class="date-section">
-          <div class="date-divider"></div>
-          <p class="conference-date">24th - 28th September 2026</p>
-        </div>
-      </div>
-      <div class="organizers">
-        <div class="organizer">
-          <div class="org-icon">
-            <img src="images/iitg-logo.svg" alt="iitg-logo" />
+    </header>
+    <div class="timeline-overview-content">
+      <!-- Timeline Section -->
+      <section class="timeline-section">
+        <div class="timeline">
+          <div class="timeline-bar" id="timeline-bar-1">
+            <div class="timeline-dot" id="timeline-dot-1"></div>
+            <div class="timeline-content" id="timeline-content-1">
+              <div class="timeline-above-bar" id="timeline-above-bar-1"></div>
+              <span class="timeline-date">24 Sep 2026</span>
+              <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
+            </div>
           </div>
-          <p>Department Of Design<br />IIT Guwahati</p>
-        </div>
-        <div class="co-organizers">
-          <p class="co-org-label">Co-Organizer</p>
-          <div class="co-org-logos">
-            <img src="images/ld-logo.svg" alt="LD Logo" />
-            <img src="images/mit_2.svg" alt="Partner Logo" />
+          <div class="timeline-bar" id="timeline-bar-2">
+            <div class="timeline-dot" id="timeline-dot-2"></div>
+            <div class="timeline-content" id="timeline-content-2">
+              <span class="timeline-date">25 Sep 2026</span>
+              <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
+              <div class="timeline-above-bar" id="timeline-above-bar-2"></div>
+            </div>
           </div>
-        </div>
-        <img src="images/partner-logo.png" alt="Sponsor Logo" class="sponsor-logo" />
-      </div>
-    </div>
-  </header>
-  <div class="timeline-overview-content">
-    <!-- Timeline Section -->
-    <section class="timeline-section">
-      <div class="timeline">
-        <div class="timeline-bar" id="timeline-bar-1">
-          <div class="timeline-dot" id="timeline-dot-1"></div>
-          <div class="timeline-content" id="timeline-content-1">
-            <div class="timeline-above-bar" id="timeline-above-bar-1"></div>
-            <span class="timeline-date">24 Sep 2026</span>
-            <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
+          <div class="timeline-bar" id="timeline-bar-3">
+            <div class="timeline-dot" id="timeline-dot-3"></div>
+            <div class="timeline-content" id="timeline-content-3">
+              <div class="timeline-above-bar" id="timeline-above-bar-3"></div>
+              <span class="timeline-date">26 Sep 2026</span>
+              <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
+            </div>
+          </div>
+          <div class="timeline-bar" id="timeline-bar-4">
+            <div class="timeline-dot" id="timeline-dot-4"></div>
+            <div class="timeline-content" id="timeline-content-4">
+              <span class="timeline-date">27 Sep 2026</span>
+              <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
+              <div class="timeline-above-bar" id="timeline-above-bar-4"></div>
+            </div>
           </div>
         </div>
-        <div class="timeline-bar" id="timeline-bar-2">
-          <div class="timeline-dot" id="timeline-dot-2"></div>
-          <div class="timeline-content" id="timeline-content-2">
-            <span class="timeline-date">25 Sep 2026</span>
-            <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
-            <div class="timeline-above-bar" id="timeline-above-bar-2"></div>
-          </div>
-        </div>
-        <div class="timeline-bar" id="timeline-bar-3">
-          <div class="timeline-dot" id="timeline-dot-3"></div>
-          <div class="timeline-content" id="timeline-content-3">
-            <div class="timeline-above-bar" id="timeline-above-bar-3"></div>
-            <span class="timeline-date">26 Sep 2026</span>
-            <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
-          </div>
-        </div>
-        <div class="timeline-bar" id="timeline-bar-4">
-          <div class="timeline-dot" id="timeline-dot-4"></div>
-          <div class="timeline-content" id="timeline-content-4">
-            <span class="timeline-date">27 Sep 2026</span>
-            <p class="timeline-title">Sunt nostrud amet<br />sint do</p>
-            <div class="timeline-above-bar" id="timeline-above-bar-4"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Overview Section -->
-    <section id="overview" class="overview-section">
-      <div class="container">
-        <div class="overview-content">
-          <h2>Overview</h2>
-          <p>
-            It pervades all spheres of life, and has been around as long as
-            life has taken up the task of purposefully changing the world
-            around it. Research into design and the emergence of a research
-            community in this area has been relatively new. Its development
-            has been influenced by the multiple facets of design (human,
-            artefact, process, organisation, the micro- and macro economy and
-            the ecology by which design is shaped) and the associated
-            diversification of the community depending on the facets of focus
-            or that of their applications. Design is complex, balancing the
-            needs of multiple stakeholders, and requiring a multitude of areas
-            of knowledge to be utilised, and resources spread across space and
-            time.
-          </p>
-        </div>
-        <div class="overview-divider"></div>
-        <div class="overview-sidebar">
-          <h3>Design meets<br />Technology and<br />Business.</h3>
-          <div class="design-icon">
-            <img src="images/icons/overview_icon.svg" alt="Design Tools" />
+      <!-- Overview Section -->
+      <section id="overview" class="overview-section">
+        <div class="container">
+          <div class="overview-content">
+            <h2>Overview</h2>
+            <p>
+              It pervades all spheres of life, and has been around as long as
+              life has taken up the task of purposefully changing the world
+              around it. Research into design and the emergence of a research
+              community in this area has been relatively new. Its development
+              has been influenced by the multiple facets of design (human,
+              artefact, process, organisation, the micro- and macro economy and
+              the ecology by which design is shaped) and the associated
+              diversification of the community depending on the facets of focus
+              or that of their applications. Design is complex, balancing the
+              needs of multiple stakeholders, and requiring a multitude of areas
+              of knowledge to be utilised, and resources spread across space and
+              time.
+            </p>
+          </div>
+          <div class="overview-divider"></div>
+          <div class="overview-sidebar">
+            <h3>Design meets<br />Technology and<br />Business.</h3>
+            <div class="design-icon">
+              <img src="images/icons/overview_icon.svg" alt="Design Tools" />
+            </div>
           </div>
         </div>
-      </div>
-       <div class="conference-description-container">
+        <div class="conference-description-container">
           <p class="conference-description">
             INDIS is the eleventh in a series of conferences intended to be held
-            every two years in India to bring together the international community
-            from diverse areas of design practice, education and research. Explore
-            the dynamic world of design research at ICoRD'27 from January 6th to
-            9th, 2027, at the Department of Design and Manufacturing, Indian
-            Institute of Science, Bengaluru. ICoRD'27 is organised under the
-            auspices of
+            every two years in India to bring together the international
+            community from diverse areas of design practice, education and
+            research. Explore the dynamic world of design research at ICoRD'27
+            from January 6th to 9th, 2027, at the Department of Design and
+            Manufacturing, Indian Institute of Science, Bengaluru. ICoRD'27 is
+            organised under the auspices of
           </p>
         </div>
-    </section>
-  </div>
-  <div class="papers-section-content">
-    <!-- Call for Papers Section -->
-    <section id="call-for-papers" class="call-for-papers">
-      <div class="container">
-        <h2>Call for Paper / Projects</h2>
-        <div class="cfp-intro">
-          <div class="cfp-item">
-            <div class="cfp-icon">
-              <img src="images/icons/Section 1/Mask group.svg" alt="" />
+      </section>
+    </div>
+    <div class="papers-section-content">
+      <!-- Call for Papers Section -->
+      <section id="call-for-papers" class="call-for-papers">
+        <div class="container">
+          <h2>Call for Paper / Projects</h2>
+          <div class="cfp-intro">
+            <div class="cfp-item">
+              <div class="cfp-icon">
+                <img src="images/icons/Section 1/Mask group.svg" alt="" />
+              </div>
+              <p>
+                With peer-reviewed publications, visual papers, workshops, and
+                keynote sessions, INDIS 2026 fosters conversations that move
+                from Indian contexts to
+                <strong>global perspectives,</strong> positioning design as a
+                strategic and transformative force.
+              </p>
             </div>
-            <p>
-              With peer-reviewed publications, visual papers, workshops, and
-              keynote sessions, INDIS 2026 fosters conversations that move
-              from Indian contexts to
-              <strong>global perspectives,</strong> positioning design as a
-              strategic and transformative force.
-            </p>
-          </div>
-          <div class="cfp-item">
-            <div class="cfp-icon">
-              <img src="images/icons/Section 1/Mask group-1.svg" alt="" />
+            <div class="cfp-item">
+              <div class="cfp-icon">
+                <img src="images/icons/Section 1/Mask group-1.svg" alt="" />
+              </div>
+              <p>
+                Join us to reflect, research, and re imagine
+                <strong>design led innovation</strong> by connecting local
+                insights with global discourse across design, technology, and
+                business.
+              </p>
             </div>
-            <p>
-              Join us to reflect, research, and re imagine
-              <strong>design led innovation</strong> by connecting local
-              insights with global discourse across design, technology, and
-              business.
-            </p>
           </div>
+
+          <div class="topics-grid">
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Application of Design Knowledge in Practice</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Design Evaluation and Optimisation</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Design Ideation, Creativity and Synthesis</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Design Modelling, Prototyping, Simulation and Vis...</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Design Theory and Research Methodology</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Innovation Management and Entrepreneurship</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Design Aesthetics, Semiotics, Semantics</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge">Design Training and Education</span>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="topic-card">
+              <span class="topic-badge"
+                >Design Teams, Collaboration, Communication</span
+              >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="topic-footer">
+                <span>Lorem Ipsum</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="impt-dates">
+      <!-- Important Dates Section -->
+      <section id="important-dates" class="important-dates">
+        <div class="container">
+          <h2>Important Dates</h2>
+          <div class="dates-grid">
+            <div class="date-card">
+              <div class="date-icon">
+                <img src="images/icons/section 2/1.svg" alt="" />
+              </div>
+              <p>Presentations from experts and practitioners.</p>
+              <span class="date-badge">24 September, 2026</span>
+            </div>
+            <div class="date-card">
+              <div class="date-icon">
+                <img src="images/icons/section 2/2.svg" alt="" />
+              </div>
+              <p>Presentations on industry and studies in practice?</p>
+              <span class="date-badge">25 September, 2026</span>
+            </div>
+            <div class="date-card">
+              <div class="date-icon">
+                <img src="images/icons/section 2/3.svg" alt="" />
+              </div>
+              <p>Presentation of ICoNNN Awards and Keynotes</p>
+              <span class="date-badge">25 September, 2026</span>
+            </div>
+            <div class="date-card">
+              <div class="date-icon">
+                <img src="images/icons/section 2/4.svg" alt="" />
+              </div>
+              <p>Doctoral Symposium</p>
+              <span class="date-badge">24 September, 2026</span>
+            </div>
+            <div class="date-card">
+              <div class="date-icon">
+                <img src="images/icons/section 2/5.svg" alt="" />
+              </div>
+              <p>Networking Sessions for Young researchers</p>
+              <span class="date-badge">25 September, 2026</span>
+            </div>
+            <div class="date-card">
+              <div class="date-icon">
+                <img src="images/icons/section 2/6.svg" alt="" />
+              </div>
+              <p>Workshop Sessions</p>
+              <span class="date-badge">25 September, 2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="organisation-container">
+      <!-- Organisation Section -->
+      <section id="organisation" class="organisation-section">
+        <div class="container">
+          <h2>Organisation</h2>
+          <p class="org-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            aliquam orci in augue euismod eleifend. Aenean auctor ante lorem,
+            tincidunt fringilla erat interdum id. Vestibulum in ligula at ipsum
+            pretium pellentesque sit amet vel dui. Suspendisse non sodales ex.
+            Duis posuere dignissim enim sed sodales. Fusce imperdiet lacinia
+            risus sit amet blandit. Donec condimentum sed sapien vel mattis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vesti
+          </p>
+
+          <div class="committee-grid">
+            <div class="committee-card">
+              <div class="card-header">
+                <div class="card-icon">
+                  <img src="images/icons/Section 3/1.svg" alt="" />
+                </div>
+                <span class="card-number">01</span>
+              </div>
+              <div class="card-divider"></div>
+              <h3>
+                Steering Committee
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem v.
+              </p>
+            </div>
+            <div class="committee-card">
+              <div class="card-header">
+                <div class="card-icon">
+                  <img src="images/icons/Section 3/2.svg" alt="" />
+                </div>
+                <span class="card-number">02</span>
+              </div>
+              <div class="card-divider"></div>
+              <h3>
+                Advisory Committee
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem v.
+              </p>
+            </div>
+            <div class="committee-card">
+              <div class="card-header">
+                <div class="card-icon">
+                  <img src="images/icons/Section 3/3.svg" alt="" />
+                </div>
+                <span class="card-number">03</span>
+              </div>
+              <div class="card-divider"></div>
+              <h3>
+                Programme and Conference Chair
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem v.
+              </p>
+            </div>
+            <div class="committee-card">
+              <div class="card-header">
+                <div class="card-icon">
+                  <img src="images/icons/Section 3/4.svg" alt="" />
+                </div>
+                <span class="card-number">04</span>
+              </div>
+              <div class="card-divider"></div>
+              <h3>
+                Vice-Chair
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem v.
+              </p>
+            </div>
+            <div class="committee-card">
+              <div class="card-header">
+                <div class="card-icon">
+                  <img src="images/icons/Section 3/5.svg" alt="" />
+                </div>
+                <span class="card-number">05</span>
+              </div>
+              <div class="card-divider"></div>
+              <h3>
+                Co-Chairs
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem v.
+              </p>
+            </div>
+            <div class="committee-card">
+              <div class="card-header">
+                <div class="card-icon">
+                  <img src="images/icons/Section 3/6.svg" alt="" />
+                </div>
+                <span class="card-number">06</span>
+              </div>
+              <div class="card-divider"></div>
+              <h3>
+                International Programme Committee
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
+                    fill="#A71A19"
+                  />
+                </svg>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                bibendum sem v.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Jury Members Section -->
+    <div class="jury-container">
+      <section class="jury-section">
+        <div class="container">
+          <h2>Jury Members</h2>
+          <div class="jury-navigation">
+            <button class="nav-arrow left">←</button>
+            <button class="nav-arrow right">→</button>
+          </div>
+          <div class="jury-grid">
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jury-grid" style="margin-top: 38px">
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="jury-card">
+              <div class="jury-image"></div>
+              <div class="jury-info">
+                <h4>Name</h4>
+                <p class="job-title">Job Title</p>
+                <p class="bio">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+                <div class="jury-social">
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/x.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/insta.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/icons/Social Media_Card/likdin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jury-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <!-- TOP -->
+      <div class="footer-top">
+        <div class="footer-top-grid">
+          <!-- Logos -->
+          <div class="footer-logos">
+            <img src="/images/indis_logo.png" alt="Conference Logo" />
+            <img src="/images/Indis.png" alt="INDIS 2026" />
+          </div>
+
+          <!-- Description -->
+          <p class="footer-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
         </div>
 
-        <div class="topics-grid">
-          <div class="topic-card">
-            <span class="topic-badge">Application of Design Knowledge in Practice</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Design Evaluation and Optimisation</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Design Ideation, Creativity and Synthesis</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Design Modelling, Prototyping, Simulation and Vis...</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Design Theory and Research Methodology</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Innovation Management and Entrepreneurship</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Design Aesthetics, Semiotics, Semantics</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Design Training and Education</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-          <div class="topic-card">
-            <span class="topic-badge">Design Teams, Collaboration, Communication</span>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="topic-footer">
-              <span>Lorem Ipsum</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="impt-dates">
-    <!-- Important Dates Section -->
-    <section id="important-dates" class="important-dates">
-      <div class="container">
-        <h2>Important Dates</h2>
-        <div class="dates-grid">
-          <div class="date-card">
-            <div class="date-icon">
-              <img src="images/icons/section 2/1.svg" alt="" />
-            </div>
-            <p>Presentations from experts and practitioners.</p>
-            <span class="date-badge">24 September, 2026</span>
-          </div>
-          <div class="date-card">
-            <div class="date-icon">
-              <img src="images/icons/section 2/2.svg" alt="" />
-            </div>
-            <p>Presentations on industry and studies in practice?</p>
-            <span class="date-badge">25 September, 2026</span>
-          </div>
-          <div class="date-card">
-            <div class="date-icon">
-              <img src="images/icons/section 2/3.svg" alt="" />
-            </div>
-            <p>Presentation of ICoNNN Awards and Keynotes</p>
-            <span class="date-badge">25 September, 2026</span>
-          </div>
-          <div class="date-card">
-            <div class="date-icon">
-              <img src="images/icons/section 2/4.svg" alt="" />
-            </div>
-            <p>Doctoral Symposium</p>
-            <span class="date-badge">24 September, 2026</span>
-          </div>
-          <div class="date-card">
-            <div class="date-icon">
-              <img src="images/icons/section 2/5.svg" alt="" />
-            </div>
-            <p>Networking Sessions for Young researchers</p>
-            <span class="date-badge">25 September, 2026</span>
-          </div>
-          <div class="date-card">
-            <div class="date-icon">
-              <img src="images/icons/section 2/6.svg" alt="" />
-            </div>
-            <p>Workshop Sessions</p>
-            <span class="date-badge">25 September, 2026</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="organisation-container">
-    <!-- Organisation Section -->
-    <section id="organisation" class="organisation-section">
-      <div class="container">
-        <h2>Organisation</h2>
-        <p class="org-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          aliquam orci in augue euismod eleifend. Aenean auctor ante lorem,
-          tincidunt fringilla erat interdum id. Vestibulum in ligula at ipsum
-          pretium pellentesque sit amet vel dui. Suspendisse non sodales ex.
-          Duis posuere dignissim enim sed sodales. Fusce imperdiet lacinia risus
-          sit amet blandit. Donec condimentum sed sapien vel mattis. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Vesti
-        </p>
-
-        <div class="committee-grid">
-          <div class="committee-card">
-            <div class="card-header">
-              <div class="card-icon">
-                <img src="images/icons/Section 3/1.svg" alt="" />
-              </div>
-              <span class="card-number">01</span>
-            </div>
-            <div class="card-divider"></div>
-            <h3>
-              Steering Committee
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem v.
-            </p>
-          </div>
-          <div class="committee-card">
-            <div class="card-header">
-              <div class="card-icon">
-                <img src="images/icons/Section 3/2.svg" alt="" />
-              </div>
-              <span class="card-number">02</span>
-            </div>
-            <div class="card-divider"></div>
-            <h3>
-              Advisory Committee
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem v.
-            </p>
-          </div>
-          <div class="committee-card">
-            <div class="card-header">
-              <div class="card-icon">
-                <img src="images/icons/Section 3/3.svg" alt="" />
-              </div>
-              <span class="card-number">03</span>
-            </div>
-            <div class="card-divider"></div>
-            <h3>
-              Programme and Conference Chair
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem v.
-            </p>
-          </div>
-          <div class="committee-card">
-            <div class="card-header">
-              <div class="card-icon">
-                <img src="images/icons/Section 3/4.svg" alt="" />
-              </div>
-              <span class="card-number">04</span>
-            </div>
-            <div class="card-divider"></div>
-            <h3>
-              Vice-Chair
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem v.
-            </p>
-          </div>
-          <div class="committee-card">
-            <div class="card-header">
-              <div class="card-icon">
-                <img src="images/icons/Section 3/5.svg" alt="" />
-              </div>
-              <span class="card-number">05</span>
-            </div>
-            <div class="card-divider"></div>
-            <h3>
-              Co-Chairs
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem v.
-            </p>
-          </div>
-          <div class="committee-card">
-            <div class="card-header">
-              <div class="card-icon">
-                <img src="images/icons/Section 3/6.svg" alt="" />
-              </div>
-              <span class="card-number">06</span>
-            </div>
-            <div class="card-divider"></div>
-            <h3>
-              International Programme Committee
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path
-                  d="M13.3833 7.33333H6.41667C5.86667 7.33333 5.5 6.96667 5.5 6.41667C5.5 5.86667 5.86667 5.5 6.41667 5.5H15.5833C16.1333 5.5 16.5 5.86667 16.5 6.41667V15.5833C16.5 16.1333 16.1333 16.5 15.5833 16.5C15.0333 16.5 14.6667 16.1333 14.6667 15.5833V8.61667L7.05833 16.225C6.69167 16.5917 6.14167 16.5917 5.775 16.225C5.40833 15.8583 5.40833 15.3083 5.775 14.9417L13.3833 7.33333Z"
-                  fill="#A71A19" />
-              </svg>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem vitae massa rutrum, quis lacinia dui pellentesque.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              bibendum sem v.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- Jury Members Section -->
-  <div class="jury-container">
-    <section class="jury-section">
-      <div class="container">
-        <h2>Jury Members</h2>
-        <div class="jury-navigation">
-          <button class="nav-arrow left">←</button>
-          <button class="nav-arrow right">→</button>
-        </div>
-        <div class="jury-grid">
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="jury-grid" style="margin-top: 38px">
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="jury-card">
-            <div class="jury-image"></div>
-            <div class="jury-info">
-              <h4>Name</h4>
-              <p class="job-title">Job Title</p>
-              <p class="bio">
-                There are many variations of passages of Lorem Ipsum available
-              </p>
-              <div class="jury-social">
-                <a href="#"><img src="images/icons/Social Media_Card/x.svg" alt="Twitter" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/insta.svg" alt="Instagram" /></a>
-                <a href="#"><img src="images/icons/Social Media_Card/likdin.svg" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="jury-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <footer class="footer">
-    <!-- TOP -->
-    <div class="footer-top">
-      <div class="footer-top-grid">
-        <!-- Logos -->
-        <div class="footer-logos">
-          <img src="/images/indis_logo.png" alt="Conference Logo" />
-          <img src="/images/Indis.png" alt="INDIS 2026" />
-        </div>
-
-        <!-- Description -->
-        <p class="footer-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt
-        </p>
-      </div>
-
-      <!-- LINKS + PARTNERS -->
-      <!-- <div class="footer-links-wrapper"> -->
-      <!-- <div class="footer-links-grid">
+        <!-- LINKS + PARTNERS -->
+        <!-- <div class="footer-links-wrapper"> -->
+        <!-- <div class="footer-links-grid">
           <div>
             <h4>Lorem Ipsum</h4>
             <ul>
@@ -775,31 +1013,30 @@
             </ul>
           </div> -->
 
-      <!-- Partner logos -->
-      <!-- <div class="footer-partners">
+        <!-- Partner logos -->
+        <!-- <div class="footer-partners">
             <img src="/images/DRS_logo.png" alt="DRS" />
             <img src="/images/DS.png" alt="Design Society" />
             <img src="/images/spring.png" alt="Springer" />
           </div>
         </div>
       </div> -->
-    </div>
-
-    <!-- BOTTOM -->
-    <div class="footer-bottom">
-      <span>© 2026 INDIS Conference | All Rights Reserved</span>
-
-      <div class="footer-socials">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-youtube"></i>
       </div>
-    </div>
-  </footer>
 
-  <script src="js/main.js"></script>
-</body>
+      <!-- BOTTOM -->
+      <div class="footer-bottom">
+        <span>© 2026 INDIS Conference | All Rights Reserved</span>
 
+        <div class="footer-socials">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

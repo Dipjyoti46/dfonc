@@ -342,7 +342,10 @@ body {
     height: 100%;
     object-fit: contain;
 }
-
+.event-date{
+    display: flex;
+    flex-direction: column;
+}
 .organizer p {
     color: #FFF;
     font-family: Inter;
@@ -353,6 +356,10 @@ body {
 }
 
 .co-organizers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     justify-items: center;
 }
