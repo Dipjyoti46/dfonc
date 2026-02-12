@@ -485,10 +485,12 @@ body {
 
 #timeline-bar-1 {
     background: #30439F;
-    width: 100%;
+    width: 75%;
     height: 46px;
     right: 0;
     border-radius: 23px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     z-index: 1;
 }
 
@@ -496,25 +498,29 @@ body {
     background: #FAA313;
     width: 75%;
     height: 46px;
-    right: 0;
+    right: 22px;
     border-radius: 23px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     z-index: 2;
 }
 
 #timeline-bar-3 {
     background: #E88018;
-    width: 50%;
+    width: 75%;
     height: 46px;
-    right: 0;
+    right: 44px;
     border-radius: 23px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     z-index: 3;
 }
 
 #timeline-bar-4 {
     background: #A71A19;
-    width: 30%;
+    width: 75%;
     height: 46px;
-    right: 0;
+    right: 66px;
     border-radius: 23px;
     z-index: 4;
 }
@@ -531,117 +537,64 @@ body {
     line-height: normal;
 }
 
-#timeline-content-1 {
-    top: 45px;
-    left: 205px;
-    transform: translateX(-50%);
+.timeline {
+    position: relative;
+    max-width: 1300px;
+    margin: 90px auto;
+    padding: 0 40px;
+    height: 120px;
 }
 
-#timeline-content-1 .timeline-date {
-    color: #30439F;
+/* Each timeline section takes equal width */
+.timeline-bar {
+    position: relative;
+    width: 25%;
+    float: left;
+    text-align: center;
 }
 
-#timeline-content-1 .timeline-title {
-    color: rgb(0, 0, 0);
-}
-
-#timeline-content-2 {
-    bottom: 45px;
-    left: 205px;
-    transform: translateX(-50%);
-}
-
-#timeline-content-2 .timeline-date {
-    color: #FAA313;
-}
-
-#timeline-content-2 .timeline-title {
-    color: #000000;
-}
-
-#timeline-content-3 {
-    top: 45px;
-    left: 175px;
-    transform: translateX(-50%);
-}
-
-#timeline-content-3 .timeline-date {
-    color: #E88018;
-}
-
-#timeline-content-3 .timeline-title {
-    color: #000000;
-}
-
-#timeline-content-4 {
-    left: 210px;
-    bottom: 45px;
-    transform: translateX(-50%);
-}
-
-#timeline-content-4 .timeline-date {
-    color: #A71A19;
-}
-
-#timeline-content-4 .timeline-title {
-    color: #000000;
-}
-
-#timeline-dot-1 {
+/* DOT — centered automatically */
+.timeline-dot {
     width: 22px;
     height: 22px;
-    background: #30439F;
-    border: 4px solid rgb(255, 255, 255);
     border-radius: 50%;
-    position: absolute;
+    border: 4px solid #fff;
+    margin: 0 auto;
+    position: relative;
     top: 50%;
-    left: 15%;
     transform: translateY(-50%);
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
     z-index: 10;
+}
+
+/* Dot colors */
+#timeline-dot-1 {
+    background: #30439F;
 }
 
 #timeline-dot-2 {
-    width: 22px;
-    height: 22px;
     background: #FAA313;
-    border: 4px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
-    z-index: 10;
 }
 
 #timeline-dot-3 {
-    width: 22px;
-    height: 22px;
     background: #E88018;
-    border: 4px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translateY(-50%);
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
-    z-index: 10;
 }
 
 #timeline-dot-4 {
-    width: 22px;
-    height: 22px;
     background: #A71A19;
-    border: 4px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
-    z-index: 10;
 }
+
+/* Content */
+.timeline-content {
+    position: relative;
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* Alternate up/down layout */
+.timeline-bar:nth-child(even) .timeline-content {
+    margin-top: -111px;
+}
+
 
 .timeline-date {
     font-family: 'Inter', sans-serif;
@@ -1526,14 +1479,6 @@ body {
         padding: 40px 20px;
     }
 
-    .timeline {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .timeline-bar {
-        display: none;
-    }
 
     .timeline-item.top .timeline-content,
     .timeline-item:not(.top) .timeline-content {
@@ -1589,7 +1534,29 @@ body {
 
     .date-section p {
 
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .timeline-section {
+        padding: 10px 15px;
+    }
+
+    #timeline-bar-1{
+        width: 30%;
+    }
+    #timeline-bar-2{
+        width: 30%;
+    }
+    #timeline-bar-3{
+        width: 30%;
+    }
+    #timeline-bar-4{
+        width: 30%;
+    }
+    .timeline{
+        margin: 90px 0px 90px 0px;
+        padding: 0px;
+
     }
 }
 
