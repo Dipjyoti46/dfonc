@@ -435,7 +435,7 @@ body {
 
 /* Timeline Section */
 .timeline-section {
-    height: 50vh;
+    height: 100%;
     position: relative;
     padding: 20px 50px;
     background: transparent;
@@ -1322,7 +1322,7 @@ body {
 
 .impt-dates {
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 .impt-dates::before {
