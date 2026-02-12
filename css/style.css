@@ -1566,11 +1566,6 @@ body {
         border-radius: 0;
     }
 
-    .hero-title-asia h1 span {
-        font-size: 14px;
-        list-style-position: inherit;
-    }
-
     .hero {
         height: auto;
         min-height: 100vh;
@@ -1664,6 +1659,11 @@ body {
 @media (max-width: 560px) {
     .hero-title-section h1 {
         font-size: 12px;
+    }
+
+     .hero-title-asia h1 span {
+        font-size: 14px;
+        list-style-position: inherit;
     }
 
     .date-section p {
