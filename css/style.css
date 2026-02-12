@@ -373,6 +373,13 @@ body {
     line-height: 1.15;
 }
 
+.hero-title-asia {
+    display: grid;
+    grid-template-columns: minmax(0, 600px) auto;
+    align-items: center;
+
+}
+
 .hero-title-asia h1 span {
     font-family: fontface__阿里巴巴普惠体-regular__34__757830171295;
     color: #ffffff;
@@ -393,8 +400,6 @@ body {
 .hero-title-asia .title-wrapper {
     align-items: center;
 }
-
-
 
 .date-section {
     display: flex;
@@ -525,6 +530,26 @@ body {
     width: 285px;
     height: 86px;
     aspect-ratio: 285/86;
+}
+
+
+.hero-title-asia .org-icon {
+    display: block; /* remove flex */
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero-title-asia .org-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero-title-asia .org-icon img {
+    width: clamp(120px, 18vw, 307px);
+    height: auto;
+    display: block;
 }
 
 /* Timeline Section */
@@ -1489,7 +1514,7 @@ body {
     }
 
     .hero-title-section h1 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .overview-section .container {
