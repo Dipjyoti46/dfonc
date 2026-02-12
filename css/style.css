@@ -534,7 +534,8 @@ body {
 
 
 .hero-title-asia .org-icon {
-    display: block; /* remove flex */
+    display: block;
+    /* remove flex */
     width: 100%;
     height: 100%;
 }
@@ -1550,13 +1551,19 @@ body {
 }
 
 @media (max-width: 768px) {
-    .overview-divider{
-display: none;
+    .overview-divider {
+        display: none;
     }
+
     .side-menu {
         width: 100%;
         left: -100%;
         border-radius: 0;
+    }
+
+    .hero-title-asia h1 span {
+        font-size: 14px;
+        list-style-position: inherit;
     }
 
     .hero {
