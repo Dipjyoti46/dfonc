@@ -1550,6 +1550,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .overview-divider{
+display: none;
+    }
     .side-menu {
         width: 100%;
         left: -100%;
