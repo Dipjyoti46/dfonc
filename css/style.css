@@ -94,7 +94,8 @@ body {
     display: flex;
     gap: 29px;
     align-items: center;
-    margin-top: auto; /* sticks to bottom */
+    margin-top: auto;
+    /* sticks to bottom */
 }
 
 .side-menu .social-media a img {
@@ -372,13 +373,25 @@ body {
     line-height: 1.15;
 }
 
-.hero-title-section h1 span {
+.hero-title-asia h1 span {
     font-family: fontface__阿里巴巴普惠体-regular__34__757830171295;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    max-width: 600px;
+    font-size: clamp(28px, 3.2vw, 38px);
+    line-height: 1.15;
 }
 
 .hero-title-section h1 {
     text-align: left;
+}
+
+.hero-title-asia .title-wrapper {
+    align-items: center;
 }
 
 
@@ -1622,19 +1635,23 @@ body {
         padding: 10px 15px;
     }
 
-    #timeline-bar-1{
+    #timeline-bar-1 {
         width: 30%;
     }
-    #timeline-bar-2{
+
+    #timeline-bar-2 {
         width: 30%;
     }
-    #timeline-bar-3{
+
+    #timeline-bar-3 {
         width: 30%;
     }
-    #timeline-bar-4{
+
+    #timeline-bar-4 {
         width: 30%;
     }
-    .timeline{
+
+    .timeline {
         margin: 90px 0px 90px 0px;
         padding: 0px;
 
