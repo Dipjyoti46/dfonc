@@ -1005,12 +1005,14 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.3;
-    color: #2e3f92;
+    color: #000000;
     margin: 0;
 }
 
 .submission-note {
-    text-align: center;
+    text-align:justify;
+    width: 80%;
+    padding-left: 30px;
     margin-top: 50px;
 }
 
@@ -1019,7 +1021,7 @@ body {
     font-weight: 600;
     font-size: 22px;
     line-height: 28px;
-    color: #000000;
+    color: #8D1A1A;
     margin: 0 auto;
 }
 
@@ -1055,7 +1057,7 @@ body {
 
 .date-card .dates {
     font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
     line-height: 40px;
     padding-left: 10px;
