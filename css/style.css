@@ -1775,3 +1775,72 @@ body {
         align-items: flex-start;
     }
 }
+/* ================= CLEAN 2-COLUMN ACADEMIC LAYOUT ================= */
+
+.committee-simple {
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+/* Section headings */
+.committee-heading {
+    font-family: 'Archivo', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2e3f92;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+/* Sub heading (Thematic Co-Chairs) */
+.sub-heading {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+    margin-bottom: 18px;
+}
+
+/* Each role block */
+.committee-block {
+    margin-bottom: 22px;
+}
+
+/* Role title */
+.role {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    /* color: #111; */
+    font-weight: bolder;
+}
+
+/* 2 column name–institute grid */
+.committee-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 90px;
+    row-gap: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Name styling */
+.name {
+    font-weight: 500;
+    color: #111;
+}
+
+/* Institute styling */
+.affiliation {
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .committee-grid {
+        grid-template-columns: 1fr;
+        row-gap: 4px;
+    }
+}
