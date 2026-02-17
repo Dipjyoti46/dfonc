@@ -913,58 +913,63 @@ body {
 }
 
 .topic-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 2px 8px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
-    min-height: 248px;
-}
-.topic-badge{
-    display: inline-block;
-    background: rgba(75, 107, 251, 0.05);
-    height: 30px;
-    width: 100%;
-    color: #4b6bfb;
-}
-.topic-badge p {
-    font-family: 'Work Sans', sans-serif;
-    margin: 20px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    border-radius: 6px;
-    margin-bottom: 12px;
+    min-height: 270px;
+    overflow: hidden;
+    position: relative;
 }
 
-.topic-card p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    color: #3b3b3d;
+/* Accent strip */
+.topic-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+}
+
+/* Header / Badge */
+.topic-badge {
+    background: linear-gradient(
+        135deg,
+        rgba(46, 63, 146, 0.12),
+        rgba(141, 26, 26, 0.10)
+    );
+    padding: 22px 24px 18px 30px;
+}
+
+.topic-badge p {
+    font-family: 'Work Sans', sans-serif;
+    color: #2e3f92;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.35;
+    margin: 0;
+    letter-spacing: 0.2px;
+}
+
+/* Description */
+.topic-description {
+    padding: 20px 24px 24px 30px;
     flex: 1;
 }
 
-.topic-footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
-}
-
-.topic-footer span {
-    font-family: 'Work Sans', sans-serif;
+.topic-description p {
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    color: #4f5054;
+    font-size: 14.5px;
+    line-height: 1.9;
+    color: #3b3b3d;
+    margin: 0;
 }
 
-.topic-footer .arrow {
-    font-size: 18px;
-    color: #333;
-}
 
 /* Types of Submissions Section */
 .types-submissions {
