@@ -180,7 +180,7 @@ body {
         bottom: 20px;
         justify-content: center;
     }
-    
+
 }
 
 
@@ -189,9 +189,11 @@ body {
     .menu-links a {
         font-size: 15px;
     }
-    .side-menu .social-media{
+
+    .side-menu .social-media {
         bottom: 20px;
     }
+
     .side-menu .social-media a img {
         width: 22px;
         height: 22px;
@@ -831,11 +833,16 @@ body {
     /* 99.625% */
 }
 
+
 .cfp-intro {
     display: flex;
-    gap: 100px;
+    gap: 20px;
     margin-bottom: 60px;
+    flex-direction: column;
+    text-align: justify;
+    
 }
+
 
 .cfp-item {
     display: flex;
@@ -854,13 +861,14 @@ body {
     height: 100%;
 }
 
-.cfp-item p {
+.cfp-intro p {
+
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    color: #353535;
-    max-width: 675px;
+    color: #000;
+    text-align: justify;
 }
 
 .cfp-item strong {
@@ -908,21 +916,23 @@ body {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-    padding: 22px;
     display: flex;
     flex-direction: column;
     min-height: 248px;
 }
-
-.topic-badge {
+.topic-badge{
     display: inline-block;
     background: rgba(75, 107, 251, 0.05);
+    height: 30px;
+    width: 100%;
     color: #4b6bfb;
+}
+.topic-badge p {
     font-family: 'Work Sans', sans-serif;
+    margin: 20px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20px;
-    padding: 4px 10px;
     border-radius: 6px;
     margin-bottom: 12px;
 }
@@ -930,7 +940,7 @@ body {
 .topic-card p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 14px;
     line-height: 28px;
     color: #3b3b3d;
     flex: 1;
@@ -974,23 +984,15 @@ body {
 .submission-types {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 20px;
-    max-width: 800px;
+    padding-left: 50px;
+    max-width: 100%;
     margin: 0 auto 40px;
 }
 
 .submission-type {
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-    padding: 25px 30px;
-    border-left: 4px solid #2e3f92;
-    transition: all 0.3s ease;
-}
-
-.submission-type:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px 2px rgba(0, 0, 0, 0.18);
 }
 
 .submission-type h3 {
@@ -1012,12 +1014,7 @@ body {
     font-weight: 600;
     font-size: 22px;
     line-height: 28px;
-    color: #8D1A1A;
-    background: rgba(141, 26, 26, 0.05);
-    padding: 20px 30px;
-    border-radius: 12px;
-    border: 1px solid rgba(141, 26, 26, 0.2);
-    max-width: 800px;
+    color: #000000;
     margin: 0 auto;
 }
 
@@ -1036,45 +1033,10 @@ body {
     margin-bottom: 50px;
 }
 
-.dates-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.date-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px 2px rgba(0, 0, 0, 0.15);
-    padding: 38px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 232px;
-}
-
-.date-card .date-badge {
-    align-self: flex-start;
-    color: #2C3C86;
-    /* Body/b5/Medium */
-    font-family: "Work Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    /* 142.857% */
-}
-
-.date-icon {
-    width: 42px;
-    height: 42px;
-    margin-bottom: 20px;
-}
-
-.date-icon img {
-    width: 100%;
-    height: 100%;
+.dates-list {
+    list-style-type: disc;
+    gap: 40px;
+    padding-left: 40px;
 }
 
 .date-card p {
@@ -1082,23 +1044,17 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    color: #353535;
-    flex: 1;
-    display: flex;
-    align-items: center;
+    color: #000;
+    text-align: justify;
 }
 
-.date-badge {
-    display: inline-block;
-    background: rgba(250, 163, 19, 0.05);
-    color: #faa313;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 4px 10px;
-    border-radius: 6px;
-    margin-top: 16px;
+.date-card .dates {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #333;
 }
 
 /* Organisation Section */
@@ -1520,26 +1476,6 @@ body {
         border-top: 2px solid #333;
         padding-top: 30px;
     }
-
-    .cfp-intro {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .topics-grid,
-    .dates-grid,
-    .committee-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .jury-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* .footer-content {
-        flex-direction: column;
-        gap: 40px;
-    } */
 }
 
 @media (max-width: 768px) {
@@ -1648,7 +1584,7 @@ body {
         font-size: 12px;
     }
 
-     .hero-title-asia h1 span {
+    .hero-title-asia h1 span {
         font-size: 14px;
         list-style-position: inherit;
     }
