@@ -1006,10 +1006,10 @@ body {
 
 
 /* Types of Submissions Section */
-.types-submissions {
+/* .types-submissions {
     padding: 100px 0;
     background: transparent;
-}
+} */
 
 .types-submissions h2 {
     font-family: 'Archivo', sans-serif;
@@ -1357,10 +1357,10 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 150px;
+    bottom: 0px;
     background-image: url('../images/images/bg_6.png');
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     transform: rotate(0deg);
     z-index: -1;
@@ -1378,19 +1378,19 @@ body {
     right: 0;
     bottom: 0px;
     background-image: url('../images/images/bg_1.png');
-    background-position: center;
-    background-size: cover;
+    background-position: center top;
+    background-size:auto;
     background-repeat: no-repeat;
     transform: rotate(0deg);
     z-index: -1;
 }
 
-.impt-dates {
+.for-bg-date {
     position: relative;
     height: 100%;
 }
 
-.impt-dates::before {
+.for-bg-date::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1399,7 +1399,7 @@ body {
     bottom: 0px;
     background-image: url('../images/images/bg_2.png');
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     transform: rotate(0deg);
     z-index: -1;
@@ -1407,21 +1407,36 @@ body {
 
 .organisation-container {
     position: relative;
+    overflow: hidden;
 }
 
-.organisation-container::before {
+.organisation-container::before,
+.organisation-container::after {
     content: '';
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0px;
     background-image: url('../images/images/bg_1.png');
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     transform: rotate(0deg);
     z-index: -1;
+}
+
+/* TOP background */
+.organisation-container::before {
+    top: 0;
+    height: 50%;
+    background-image: url(/images/images/bg_1.png);
+}
+
+/* BOTTOM background */
+.organisation-container::after {
+    bottom: 0;
+    height: 50%;
+    background-image: url(/images/images/bg_2.png);
 }
 
 .jury-container {
