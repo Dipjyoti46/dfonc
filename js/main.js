@@ -332,3 +332,111 @@ window.addEventListener('resize', debounce(function() {
 console.log('%cINDIS 2026', 'font-size: 24px; font-weight: bold; color: #2e3f92;');
 console.log('%cInternational Conference on Design & Innovation Studies', 'font-size: 14px; color: #666;');
 console.log('%c24th - 28th September 2026', 'font-size: 12px; color: #e49514;');
+
+
+
+const scientificCommittee = {
+  theme1: [
+    { name: "Prof. Supradip Das", affiliation: "Indian Institute of Technology Guwahati" }
+  ],
+  theme2: [
+    { name: "Prof. Sheetal Madhav Gokhale", affiliation: "Indian Institute of Technology Guwahati" }
+  ],
+  theme3: [
+    { name: "Prof. Neelarnab Dutta", affiliation: "NID Jorhat" }
+  ],
+  theme4: [
+    { name: "Prof. Sugandha Malhotra", affiliation: "IDC School of Design, IIT Bombay" }
+  ],
+  theme5: [
+    { name: "Prof. Sareka Iqbal", affiliation: "Indian Institute of Technology Guwahati" },
+    { name: "Prof. Shivaji", affiliation: "Indian Institute of Technology Hyderabad" }
+  ],
+  theme6: [
+    { name: "Prof. Urmi Salve", affiliation: "Indian Institute of Technology Guwahati" },
+    { name: "Prof. Swati Pal", affiliation: "IDC School of Design, IIT Bombay" }
+  ],
+  theme7: [
+    { name: "Prof. Pranjal Baruah", affiliation: "Indian Institute of Technology Jodhpur" },
+    { name: "Prof. Anmol Shrivastav", affiliation: "IIIT Delhi" }
+  ],
+  theme8: [
+    { name: "Prof. Sharmistha Baneerjee", affiliation: "Indian Institute of Technology Guwahati" }
+  ],
+  theme9: [
+    { name: "Prof. Rohit Joshi", affiliation: "Indian Institute of Management Shillong" }
+  ],
+  theme10: [
+    { name: "Prof. Ajeet Kumar", affiliation: "Indian Institute of Technology Guwahati" }
+  ],
+  theme11: [
+    { name: "Prof. Pankaj Upadhyay", affiliation: "Indian Institute of Technology Guwahati" }
+  ],
+  theme12: [
+    { name: "Prof. Santosh Jagtap", affiliation: "Indian Institute of Technology Guwahati" },
+    { name: "Leeladhar Ganvir", affiliation: "KPMG" }
+  ],
+  theme13: [
+    { name: "Soumen Das", affiliation: "Indian Institute of Technology Guwahati" }
+  ]
+};
+
+Object.keys(scientificCommittee).forEach(themeId => {
+  const container = document.getElementById(themeId);
+  if (!container) return;
+
+  scientificCommittee[themeId].forEach(member => {
+    const nameDiv = document.createElement("div");
+    nameDiv.className = "name";
+    nameDiv.textContent = member.name;
+
+    const affDiv = document.createElement("div");
+    affDiv.className = "affiliation";
+    affDiv.textContent = member.affiliation;
+
+    container.appendChild(nameDiv);
+    container.appendChild(affDiv);
+  });
+});
+
+
+
+const conferenceGoverningCouncil = [
+  { name: "Prof. Amarendra Kumar Das", affiliation: "Indian Institute of Technology Guwahati" },
+  { name: "Prof. Utpal Barua", affiliation: "Indian Institute of Technology Guwahati" },
+  { name: "Prof. Sougata Karmakar", affiliation: "Indian Institute of Technology Guwahati" },
+  { name: "Prof. Uday Kumar", affiliation: "Indian Institute of Technology Guwahati" },
+  { name: "Prof. Ravi Mokashi Punejar", affiliation: "Indian Institute of Technology Guwahati" },
+  { name: "Prof. Amaresh Chakraborty", affiliation: "Indian Institute of Science Bengaluru" },
+  { name: "Prof. BK Chakraborty", affiliation: "Mahindra School of Design, Mahindra University" },
+  { name: "Prof. Nishant Sharma", affiliation: "IDC School of Design, Indian Institute of Technology Bombay" },
+  { name: "Prof. Avinash Shinde", affiliation: "IDC School of Design, Indian Institute of Technology Bombay" },
+  { name: "Prof. Anirudha Joshi", affiliation: "IDC School of Design, Indian Institute of Technology Bombay" },
+  { name: "Keyur Sorathia ", affiliation: "" },
+  { name: "Abhishek Shrivastava", affiliation: "" },
+  { name: "Prof. Deepak John Mathew ", affiliation: "Indian Institute of Technology Hyderabad" },
+  { name: "Prof. Mamata Rao", affiliation: "NID Jorhat" },
+  { name: "Prof. Tarundeep Giridhar", affiliation: "NID Jorhat" },
+  { name: "Prof. Satyaki Roy", affiliation: "Indian Institute of Technology Kanpur" },
+  { name: "Prof. Puneet Tandon", affiliation: "Indian Institute of Information Technology, Design and Manufacturing," },
+  { name: "Prof. PVM Rao", affiliation: "Indian Institute of Technology Delhi" },
+];
+
+const container = document.getElementById("conference-governing-council");
+
+conferenceGoverningCouncil.forEach(member => {
+  const nameDiv = document.createElement("div");
+  nameDiv.className = "name";
+  nameDiv.textContent = member.name;
+
+  const affDiv = document.createElement("div");
+  affDiv.className = "affiliation";
+  affDiv.textContent = member.affiliation;
+
+  container.appendChild(nameDiv);
+  container.appendChild(affDiv);
+});
+
+
+
+
