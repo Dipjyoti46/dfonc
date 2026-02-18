@@ -29,6 +29,23 @@ function initMenu() {
     });
 }
 
+window.addEventListener("scroll", function() {
+    const menu = document.querySelector(".hamburger-menu");
+
+    if (window.scrollY > 600) { 
+        menu.style.background = "rgba(255,255,255,0.8)";
+        menu.querySelectorAll("span").forEach(bar => {
+            bar.style.background = "#000";
+        });
+    } else {
+        menu.style.background = "rgba(0,0,0,0.35)";
+        menu.querySelectorAll("span").forEach(bar => {
+            bar.style.background = "#fff";
+        });
+    }
+});
+
+
 function toggleMenu() {
     const menu = document.getElementById('sideMenu');
     const overlay = document.querySelector('.menu-overlay');
