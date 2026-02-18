@@ -2014,3 +2014,62 @@ body {
         row-gap: 4px;
     }
 }
+
+@media (min-width: 2560px) {
+    .container {
+        max-width: none;
+        padding: 0 100px;
+    }
+    
+    .hero-content {
+        max-width: none;
+        padding-inline: 100px;
+    }
+    
+    .overview-content {
+        max-width: none;
+    }
+    
+    .committee-simple {
+        max-width: none;
+        padding: 0 100px;
+    }
+    
+    .overview-section .container {
+        gap: 120px;
+    }
+    
+    .topics-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .committee-grid {
+        grid-template-columns: 300px 1fr;
+        column-gap: 120px;
+    }
+    
+    /* Background images for ultra-wide displays */
+    .timeline-overview-content::before {
+        background-size: cover;
+    }
+    
+    .papers-section-content::before {
+        background-size: cover;
+    }
+    
+    .for-bg-date::before {
+        background-size: cover;
+    }
+    
+    .organisation-container::before{
+        transform: rotate(-15deg);
+    }
+    .organisation-container::before,
+    .organisation-container::after {
+        background-size: cover;
+    }
+    
+    .jury-container::before {
+        background-size: cover;
+    }
+}
