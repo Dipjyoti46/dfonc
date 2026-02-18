@@ -1588,7 +1588,7 @@ body {
 
 }
 
-@media (max-width: 560px) {
+@media (max-width: 670px) {
     .logo-section {
         display: flex;
         justify-content: center;
