@@ -948,7 +948,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     color: #2e3f92;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.35;
     margin: 0;
     letter-spacing: 0.2px;
@@ -963,7 +963,7 @@ body {
 .topic-description p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 14.5px;
+    font-size: 18px;
     line-height: 1.9;
     color: #3b3b3d;
     margin: 0;
@@ -995,8 +995,11 @@ body {
     margin: 0 auto 40px;
 }
 
-.submission-type {
-    background: #fff;
+.submission-type p{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    /* background: #ffffff00; */
 }
 
 .submission-type h3 {
@@ -1679,7 +1682,10 @@ body {
     .topics-grid {
         grid-template-columns: 1fr;
     }
-
+    .submission-type p{
+        font-size: 18px;
+        line-height: 28px;
+    }
     .submission-note {
         width: 100%;
         padding-left: 0;
@@ -1710,7 +1716,7 @@ body {
     .date-card .dates {
         font-size: 18px;
         font-weight: 700;
-        color: #2e3f92;
+        color: #000000;
         padding-left: 0;
         line-height: 1.3;
     }
