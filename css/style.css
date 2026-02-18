@@ -1429,14 +1429,14 @@ body {
 .organisation-container::before {
     top: 0;
     height: 50%;
-    background-image: url(/images/images/bg_1.png);
+    background-image: url('../images/images/bg_1.png');
 }
 
 /* BOTTOM background */
 .organisation-container::after {
     bottom: 0;
     height: 50%;
-    background-image: url(/images/images/bg_2.png);
+    background-image: url('../images/images/bg_2.png');
 }
 
 .jury-container {
