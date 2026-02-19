@@ -1468,6 +1468,10 @@ body {
 .organisation-container {
     position: relative;
     overflow: hidden;
+    background-image: url('../images/images/bg_1.png');
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .organisation-container::before,
@@ -1476,27 +1480,24 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0px;
-    /* background-image: url('../images/images/bg_1.png'); */
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
-    transform: rotate(0deg);
     z-index: -1;
 }
 
 /* TOP background */
 .organisation-container::before {
     top: 0;
-    height: 50%;
+    height: 35%;
     background-image: url('../images/images/bg_2.png');
 }
 
-/* BOTTOM background */
+/* MIDDLE background */
 .organisation-container::after {
-    bottom: 0;
-    height: 50%;
-    background-image: url('../images/images/bg_1.png');
+    top: 35%;
+    height: 30%;
+    background-image: url('../images/images/bg_6.png');
 }
 
 /* .jury-container {
