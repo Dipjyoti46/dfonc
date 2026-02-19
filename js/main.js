@@ -429,11 +429,11 @@ const scientificCommittee = [
                 title: "Track 6: User Experience & Information Design",
                 chairs: [
                     {
-                        name: "Prof. Pranjal Baruah",
+                        name: "Prof. Pranjal Protim Borah",
                         affiliation: "Indian Institute of Technology Jodhpur"
                     },
                     {
-                        name: "Prof. Anmol Shrivastav",
+                        name: "Prof. Anmol Srivastava",
                         affiliation: "Indraprastha Institute of Information Technology Delhi"
                     },
                 ]
@@ -442,7 +442,7 @@ const scientificCommittee = [
                 title: "Track 7: Design Education & Pedagogy",
                 chairs: [
                     {
-                        name: "Prof. Sharmistha Baneerjee",
+                        name: "Prof. Sharmistha Banerjee",
                         affiliation: "Indian Institute of Technology Guwahati"
                     },
                 ]
