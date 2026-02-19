@@ -796,7 +796,11 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #000;
-    text-align: justify;
+    text-align:left;
+    margin-top: 10px;
+}
+.overview-content p b{
+    color: #8D1A1A;
 }
 
 .overview-sidebar {
@@ -859,7 +863,7 @@ body {
 }
 
 .call-for-papers h2 {
-    color: #8D1A1A;
+    color: #2e3f92;
     font-family: Archivo;
     font-size: 80px;
     font-style: normal;
