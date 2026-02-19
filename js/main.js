@@ -357,7 +357,9 @@ const scientificCommittee = {
     { name: "Prof. Supradip Das", affiliation: "Indian Institute of Technology Guwahati" }
   ],
   theme2: [
-    { name: "Prof. Sheetal Madhav Gokhale", affiliation: "Indian Institute of Technology Guwahati" }
+    { name: "Prof. Sheetal Madhav Gokhale", affiliation: "Indian Institute of Technology Guwahati" },
+    { name: "Prof. Subir Dey", affiliation: "Indian Institute of Technology Delhi" },
+    { name: "Prof. Mohammad Shahid", affiliation: "Indian Institute of Technology Hyderabad" }
   ],
   theme3: [
     { name: "Prof. Neelarnab Dutta", affiliation: "NID Jorhat" }

@@ -925,6 +925,9 @@ body {
 
 }
 
+.cfp-intro p b {
+    color:#8D1A1A;
+}
 
 .cfp-item {
     display: flex;
