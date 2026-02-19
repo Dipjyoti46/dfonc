@@ -473,9 +473,10 @@ body {
 
 .organizers {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-between;
     gap: clamp(40px, 8vw, 180px);
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -552,6 +553,47 @@ body {
 .co-org-logos img {
     width: 143px;
     height: 51px;
+    aspect-ratio: 285/86;
+
+}
+.supporting-organizers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    gap: 10px;
+    margin-top: 21px
+}
+
+.supporting-organizers p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20.445px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.support-org-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+
+.support-org-logos {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+
+}
+
+.support-org-logos img {
+    width: 200px;
+    height: 60px;
     aspect-ratio: 285/86;
 
 }
@@ -1372,23 +1414,31 @@ body {
 
 .papers-section-content {
     position: relative;
+    overflow: hidden;
 }
 
-.papers-section-content::before {
+.papers-section-content::before,
+.papers-section-content::after {
     content: '';
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
-    bottom: 0px;
-    background-image: url('../images/images/bg_1.png');
+    height: 50%;
     background-position: center top;
-    background-size:auto;
+    background-size: auto;
     background-repeat: no-repeat;
-    transform: rotate(0deg);
     z-index: -1;
 }
 
+.papers-section-content::before {
+    top: 0;
+    background-image: url('../images/images/bg_1.png');
+}
+
+.papers-section-content::after {
+    bottom: 0;
+    background-image: url('../images/images/bg_2.png');
+}
 .for-bg-date {
     position: relative;
     height: 100%;
@@ -1401,7 +1451,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0px;
-    background-image: url('../images/images/bg_2.png');
+    background-image: url('../images/images/bg_1.png');
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -1421,7 +1471,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0px;
-    background-image: url('../images/images/bg_1.png');
+    /* background-image: url('../images/images/bg_1.png'); */
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -1433,17 +1483,17 @@ body {
 .organisation-container::before {
     top: 0;
     height: 50%;
-    background-image: url('../images/images/bg_1.png');
+    background-image: url('../images/images/bg_2.png');
 }
 
 /* BOTTOM background */
 .organisation-container::after {
     bottom: 0;
     height: 50%;
-    background-image: url('../images/images/bg_2.png');
+    background-image: url('../images/images/bg_1.png');
 }
 
-.jury-container {
+/* .jury-container {
     position: relative;
 }
 
@@ -1454,13 +1504,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0px;
-    background-image: url('../images/images/bg_2.png');
+    background-image: url('../images/images/bg_1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(0deg);
     z-index: -1;
-}
+} */
 
 /* Media Overlay Background */
 .menu-overlay {
@@ -2060,20 +2110,18 @@ body {
     .papers-section-content::before {
         background-size: cover;
     }
+    .papers-section-content::after {
+        display:none;
+        background-size: cover;
+    }
     
     .for-bg-date::before {
         background-size: cover;
     }
     
-    .organisation-container::before{
-        transform: rotate(-15deg);
-    }
     .organisation-container::before,
     .organisation-container::after {
         background-size: cover;
-    }
-    
-    .jury-container::before {
-        background-size: cover;
+        transform: rotate(0deg);
     }
 }
