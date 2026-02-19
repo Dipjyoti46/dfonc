@@ -2066,131 +2066,261 @@ body {
     }
 }
 
-/* ================= CLEAN 2-COLUMN ACADEMIC LAYOUT ================= */
+/* ================= ORGANISING COMMITTEE ================= */
 
-.committee-simple {
-    max-width: 1000px;
-    margin-top: 20px;
+.committee-section{
+    margin-top:8px;
 }
 
-/* Section headings */
-.committee-heading {
-    font-family: 'Archivo', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: #2e3f92;
-    margin-top: 50px;
-    margin-bottom: 24px;
+/* each role block */
+.committee-row{
+    margin-bottom:22px;
 }
 
-/* Sub heading (Thematic Co-Chairs) */
-.sub-heading {
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #777;
-    margin-bottom: 18px;
+/* role title */
+.committee-row .role{
+    font-size:16px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:6px;
 }
 
-/* Each role block */
-.committee-block {
+/* SAME GRID as scientific committee */
+.committee-grid{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    column-gap:90px;
+    row-gap:8px;
+}
+
+/* name */
+.name{
+    font-weight:500;
+    color:#111;
+}
+
+/* affiliation */
+.affiliation{
+    color:#555;
+}
+
+.organisation-section h2{
+    font-size:42px;
+    font-weight:700;
+    color:#2e3f92;
+    margin-bottom:40px;
+    letter-spacing:-0.5px;
+}
+
+.committee-heading{
+    font-size:24px;
+    font-weight:600;
+    color:#1f2d5a;
+
+    margin-top:60px;
+    margin-bottom:18px;
+
+    position:relative;
+    padding-bottom:10px;
+}
+
+/* subtle academic underline */
+.committee-heading::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:80px;
+    height:2px;
+    background:#2e3f92;
+    opacity:0.7;
+}
+.committee-heading{
+    font-size:24px;
+    font-weight:600;
+    color:#1f2d5a;
+
+    margin-top:60px;
+    margin-bottom:18px;
+
+    position:relative;
+    padding-bottom:10px;
+}
+
+/* subtle academic underline */
+.committee-heading::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:80px;
+    height:2px;
+    background:#2e3f92;
+    opacity:0.7;
+}
+
+.committee-heading + .sub-heading{
+    margin-top:-8px;
+}
+
+
+
+/* ================= SECTION TRANSITION ================= */
+
+.section-transition{
+    margin:48px 0 36px;
+    height:1px;
+    width:100%;
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(0,0,0,0.12),
+        transparent
+    );
+}
+@media (max-width:768px){
+
+    .committee-grid{
+        grid-template-columns:1fr;
+        row-gap:4px;
+    }
+
+    .committee-row{
+        margin-bottom:18px;
+    }
+}
+
+
+/* ===================================================
+   SCIENTIFIC COMMITTEE — EDITORIAL ACADEMIC DESIGN
+=================================================== */
+
+#scientific-committee{
+    max-width:1100px;
+}
+
+/* ---------- THEME BLOCK ---------- */
+
+.theme-block{
+    margin-bottom:64px;
+}
+
+/* THEME TITLE */
+.theme-title{
+    font-size:24px;
+    font-weight:700;
+    color:#2e3f92;
+    margin-bottom:18px;
+    position:relative;
+}
+
+/* subtle academic divider */
+.theme-title::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:2px;
+    background:#2e3f92;
+    margin-top:10px;
+}
+
+/* ---------- LABELS ---------- */
+
+.chair-label,
+.track-label{
+    font-size:12px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    color:#8b8b8b;
+    margin-bottom:8px;
+}
+
+/* ---------- THEME CHAIR ---------- */
+
+.theme-chair{
+    margin-bottom:26px;
+}
+
+/* ---------- TRACK BLOCK ---------- */
+
+.track-block{
+    margin-top:28px;
+    padding:18px 22px;
+    background:rgba(255,255,255,0.55);
+    backdrop-filter:blur(6px);
+    border-radius:6px;
+
+    transition:all .25s ease;
+}
+
+/* subtle interaction (UX polish) */
+.track-block:hover{
+    background:rgba(255,255,255,0.8);
+}
+
+/* TRACK TITLE */
+.track-title{
+    font-size:18px;
+    font-weight:600;
+    color:#111;
+    margin-bottom:10px;
+}
+
+/* ---------- NAME GRID ---------- */
+
+.committee-grid{
+    display:grid;
+    grid-template-columns:340px 1fr;
+    column-gap:60px;
+    row-gap:6px;
+
+    font-size:15.5px;
+    line-height:1.55;
+}
+
+/* names */
+.name{
+    font-weight:500;
+    color:#111;
+}
+
+/* institute */
+.affiliation{
+    color:#555;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:768px){
+
+    .committee-grid{
+        grid-template-columns:1fr;
+    }
+
+    .track-block{
+        padding:14px;
+    }
+}
+
+/* Last organising block → transition spacing */
+.committee-block-last{
+    /* margin-bottom:42px;
+    padding-bottom:28px;
+    border-bottom:1px solid rgba(0,0,0,0.08); */
+    border-top:1px solid rgba(0,0,0,0.08);
+    margin-top:42px;
+    padding-top:28px;
+}
+.committee-heading + .committee-block{
+    margin-top:10px;
+}
+
+.committee-block-last .role {
     margin-bottom: 22px;
+    font-weight: bold
 }
 
-/* Role title */
-.role {
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 8px;
-    /* color: #111; */
-    font-weight: bolder;
+.committee-block-last .committee-grid {
+    row-gap: 13px;
 }
 
-/* 2 column name–institute grid */
-.committee-grid {
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    column-gap: 90px;
-    row-gap: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Name styling */
-.name {
-    font-weight: 500;
-    color: #111;
-}
-
-/* Institute styling */
-.affiliation {
-    color: #555;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .committee-grid {
-        grid-template-columns: 1fr;
-        row-gap: 4px;
-    }
-    
-}
-
-@media (min-width: 2560px) {
-    .container {
-        max-width: none;
-        padding: 0 100px;
-    }
-
-    .hero-content {
-        max-width: none;
-        padding-inline: 100px;
-    }
-
-    .overview-content {
-        max-width: none;
-    }
-
-    .committee-simple {
-        max-width: none;
-        padding: 0 100px;
-    }
-
-    .overview-section .container {
-        gap: 120px;
-    }
-
-    .topics-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .committee-grid {
-        grid-template-columns: 300px 1fr;
-        column-gap: 120px;
-    }
-
-    /* Background images for ultra-wide displays */
-    .timeline-overview-content::before {
-        background-size: cover;
-    }
-
-    .papers-section-content::before {
-        background-size: cover;
-    }
-
-    .papers-section-content::after {
-        display: none;
-        background-size: cover;
-    }
-
-    .for-bg-date::before {
-        background-size: cover;
-    }
-
-    .organisation-container::before,
-    .organisation-container::after {
-        background-size: cover;
-        transform: rotate(0deg);
-    }
-}
