@@ -139,8 +139,8 @@ body {
         gap: 22px;
     }
 
-    .overview-divider{
-        display:none;
+    .overview-divider {
+        display: none;
     }
 }
 
@@ -244,11 +244,11 @@ body {
     cursor: pointer;
     z-index: 2000;
 
-    box-shadow: 
-        0 8px 24px rgba(0,0,0,0.25),
-        0 2px 6px rgba(0,0,0,0.15);
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.25),
+        0 2px 6px rgba(0, 0, 0, 0.15);
 
-    transition: 
+    transition:
         transform 0.25s ease,
         background 0.3s ease,
         box-shadow 0.3s ease;
@@ -267,9 +267,9 @@ body {
 .hamburger-menu:hover {
     transform: scale(1.06);
     background: rgba(20, 20, 20, 0.8);
-    box-shadow: 
-        0 12px 30px rgba(0,0,0,0.35),
-        0 4px 12px rgba(0,0,0,0.2);
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.35),
+        0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -474,7 +474,7 @@ body {
 .organizers {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: clamp(40px, 8vw, 180px);
     /* flex-wrap: wrap; */
 }
@@ -556,7 +556,8 @@ body {
     aspect-ratio: 285/86;
 
 }
-.supporting-organizers{
+
+.supporting-organizers {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -838,10 +839,11 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #000;
-    text-align:left;
+    text-align: left;
     margin-top: 10px;
 }
-.overview-content p b{
+
+.overview-content p b {
     color: #8D1A1A;
 }
 
@@ -1079,7 +1081,7 @@ body {
     margin: 0 auto 40px;
 }
 
-.submission-type p{
+.submission-type p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -1442,6 +1444,7 @@ body {
     bottom: 0;
     background-image: url('../images/images/bg_2.png');
 }
+
 .for-bg-date {
     position: relative;
     height: 100%;
@@ -1579,7 +1582,7 @@ body {
     }
 
     .hero-title-section h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .overview-section .container {
@@ -1615,16 +1618,67 @@ body {
     }
 
     .logo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 30px;
+    }
+
+    .logo-section img {
+        width: 250px;
     }
 
     .iitg-logo {
         width: 200px;
     }
 
+    .hero-title-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
     .hero-title-section h1 {
-        font-size: 36px;
+        color: #FFF;
+        text-align: center;
+        font-family: Arial;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        /* 125% */
+    }
+
+    .organizer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .date-divider {
+        display: none;
+    }
+
+    .event-date {
+        margin-top: 100px;
+    }
+
+    .date-section p {
+        color: #FFF;
+        text-align: center;
+        font-family: Arial;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        /* 133.333% */
+    }
+
+    .hero-title-asia h1 span {
+        font-size: 14px;
+        list-style-position: inherit;
     }
 
     .conference-date {
@@ -1672,6 +1726,7 @@ body {
         font-size: 40px;
     }
 
+
     .overview-content p,
     .cfp-item p,
     .date-card p,
@@ -1711,7 +1766,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .organizer {
@@ -1726,7 +1781,7 @@ body {
     }
 
     .event-date {
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     .hero-title-section h1 {
@@ -1749,6 +1804,13 @@ body {
         font-weight: 600;
         line-height: 32px;
         /* 133.333% */
+    }
+
+    .organizers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
     }
 
     .hero-title-asia h1 span {
@@ -1789,10 +1851,12 @@ body {
     .topics-grid {
         grid-template-columns: 1fr;
     }
-    .submission-type p{
+
+    .submission-type p {
         font-size: 18px;
         line-height: 28px;
     }
+
     .submission-note {
         width: 100%;
         padding-left: 0;
@@ -2070,6 +2134,7 @@ body {
         grid-template-columns: 1fr;
         row-gap: 4px;
     }
+    
 }
 
 @media (min-width: 2560px) {
@@ -2077,51 +2142,52 @@ body {
         max-width: none;
         padding: 0 100px;
     }
-    
+
     .hero-content {
         max-width: none;
         padding-inline: 100px;
     }
-    
+
     .overview-content {
         max-width: none;
     }
-    
+
     .committee-simple {
         max-width: none;
         padding: 0 100px;
     }
-    
+
     .overview-section .container {
         gap: 120px;
     }
-    
+
     .topics-grid {
         grid-template-columns: repeat(4, 1fr);
     }
-    
+
     .committee-grid {
         grid-template-columns: 300px 1fr;
         column-gap: 120px;
     }
-    
+
     /* Background images for ultra-wide displays */
     .timeline-overview-content::before {
         background-size: cover;
     }
-    
+
     .papers-section-content::before {
         background-size: cover;
     }
+
     .papers-section-content::after {
-        display:none;
+        display: none;
         background-size: cover;
     }
-    
+
     .for-bg-date::before {
         background-size: cover;
     }
-    
+
     .organisation-container::before,
     .organisation-container::after {
         background-size: cover;
