@@ -394,7 +394,7 @@ const scientificCommittee = [
                 title: "Track 3: Transportation / Mobility",
                 chairs: [
                     {
-                        name: "Prof. Sugandha Malhotra",
+                        name: "Prof. Sugandh Malhotra",
                         affiliation: "IDC School of Design, IIT Bombay"
                     },
                 ]
@@ -403,11 +403,11 @@ const scientificCommittee = [
                 title: "Track 4: Space & Environmental",
                 chairs: [
                     {
-                        name: "Prof. Sareka Iqbal",
+                        name: "Prof. Shareka Iqbal",
                         affiliation: "Indian Institute of Technology Guwahati"
                     },
                     {
-                        name: "Prof. Shivaji",
+                        name: "Prof. Shiva ji",
                         affiliation: "Indian Institute of Technology Hyderabad"
                     },
                 ]
@@ -416,7 +416,7 @@ const scientificCommittee = [
                 title: "Track 5: Human Factors & Ergo",
                 chairs: [
                     {
-                        name: "Prof. Urmi Salve",
+                        name: "Prof. Urmi Ravindra Salve",
                         affiliation: "Indian Institute of Technology Guwahati"
                     },
                     {
