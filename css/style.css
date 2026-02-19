@@ -928,7 +928,7 @@ body {
 }
 
 .cfp-intro p b {
-    color:#8D1A1A;
+    color: #8D1A1A;
 }
 
 .cfp-item {
@@ -1751,6 +1751,11 @@ body {
 }
 
 @media (max-width: 670px) {
+    
+    .hamburger-menu{
+        left: 5px;
+    }
+    
     .logo-section {
         display: flex;
         justify-content: center;
@@ -2068,125 +2073,125 @@ body {
 
 /* ================= ORGANISING COMMITTEE ================= */
 
-.committee-section{
-    margin-top:8px;
+.committee-section {
+    margin-top: 8px;
 }
 
 /* each role block */
-.committee-row{
-    margin-bottom:22px;
+.committee-row {
+    margin-bottom: 22px;
 }
 
 /* role title */
-.committee-row .role{
-    font-size:16px;
-    font-weight:600;
-    color:#222;
-    margin-bottom:6px;
+.committee-row .role {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
 }
 
 /* SAME GRID as scientific committee */
-.committee-grid{
-    display:grid;
-    grid-template-columns:260px 1fr;
-    column-gap:90px;
-    row-gap:8px;
+.committee-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 90px;
+    row-gap: 8px;
 }
 
 /* name */
-.name{
-    font-weight:500;
-    color:#111;
+.name {
+    font-weight: 500;
+    color: #111;
 }
 
 /* affiliation */
-.affiliation{
-    color:#555;
+.affiliation {
+    color: #555;
 }
 
-.organisation-section h2{
-    font-size:42px;
-    font-weight:700;
-    color:#2e3f92;
-    margin-bottom:40px;
-    letter-spacing:-0.5px;
+.organisation-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2e3f92;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
 }
 
-.committee-heading{
-    font-size:24px;
-    font-weight:600;
-    color:#1f2d5a;
+.committee-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2d5a;
 
-    margin-top:60px;
-    margin-bottom:18px;
+    margin-top: 60px;
+    margin-bottom: 18px;
 
-    position:relative;
-    padding-bottom:10px;
-}
-
-/* subtle academic underline */
-.committee-heading::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:80px;
-    height:2px;
-    background:#2e3f92;
-    opacity:0.7;
-}
-.committee-heading{
-    font-size:24px;
-    font-weight:600;
-    color:#1f2d5a;
-
-    margin-top:60px;
-    margin-bottom:18px;
-
-    position:relative;
-    padding-bottom:10px;
+    position: relative;
+    padding-bottom: 10px;
 }
 
 /* subtle academic underline */
-.committee-heading::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:80px;
-    height:2px;
-    background:#2e3f92;
-    opacity:0.7;
+.committee-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 2px;
+    background: #2e3f92;
+    opacity: 0.7;
 }
 
-.committee-heading + .sub-heading{
-    margin-top:-8px;
+.committee-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2d5a;
+
+    margin-top: 60px;
+    margin-bottom: 18px;
+
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* subtle academic underline */
+.committee-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 2px;
+    background: #2e3f92;
+    opacity: 0.7;
+}
+
+.committee-heading+.sub-heading {
+    margin-top: -8px;
 }
 
 
 
 /* ================= SECTION TRANSITION ================= */
 
-.section-transition{
-    margin:48px 0 36px;
-    height:1px;
-    width:100%;
-    background:linear-gradient(
-        to right,
-        transparent,
-        rgba(0,0,0,0.12),
-        transparent
-    );
+.section-transition {
+    margin: 48px 0 36px;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right,
+            transparent,
+            rgba(0, 0, 0, 0.12),
+            transparent);
 }
-@media (max-width:768px){
 
-    .committee-grid{
-        grid-template-columns:1fr;
-        row-gap:4px;
+@media (max-width:768px) {
+
+    .committee-grid {
+        grid-template-columns: 1fr;
+        row-gap: 4px;
     }
 
-    .committee-row{
-        margin-bottom:18px;
+    .committee-row {
+        margin-bottom: 18px;
     }
 }
 
@@ -2195,124 +2200,125 @@ body {
    SCIENTIFIC COMMITTEE — EDITORIAL ACADEMIC DESIGN
 =================================================== */
 
-#scientific-committee{
-    max-width:1100px;
+#scientific-committee {
+    max-width: 1100px;
 }
 
 /* ---------- THEME BLOCK ---------- */
 
-.theme-block{
-    margin-bottom:64px;
+.theme-block {
+    margin-bottom: 64px;
 }
 
 /* THEME TITLE */
-.theme-title{
-    font-size:24px;
-    font-weight:700;
-    color:#2e3f92;
-    margin-bottom:18px;
-    position:relative;
+.theme-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2e3f92;
+    margin-bottom: 18px;
+    position: relative;
 }
 
 /* subtle academic divider */
-.theme-title::after{
-    content:"";
-    display:block;
-    width:80px;
-    height:2px;
-    background:#2e3f92;
-    margin-top:10px;
+.theme-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #2e3f92;
+    margin-top: 10px;
 }
 
 /* ---------- LABELS ---------- */
 
 .chair-label,
-.track-label{
-    font-size:12px;
-    letter-spacing:1.4px;
-    text-transform:uppercase;
-    color:#8b8b8b;
-    margin-bottom:8px;
+.track-label {
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #8b8b8b;
+    margin-bottom: 8px;
 }
 
 /* ---------- THEME CHAIR ---------- */
 
-.theme-chair{
-    margin-bottom:26px;
+.theme-chair {
+    margin-bottom: 26px;
 }
 
 /* ---------- TRACK BLOCK ---------- */
 
-.track-block{
-    margin-top:28px;
-    padding:18px 22px;
-    background:rgba(255,255,255,0.55);
-    backdrop-filter:blur(6px);
-    border-radius:6px;
+.track-block {
+    margin-top: 28px;
+    padding: 18px 22px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+    border-radius: 6px;
 
-    transition:all .25s ease;
+    transition: all .25s ease;
 }
 
 /* subtle interaction (UX polish) */
-.track-block:hover{
-    background:rgba(255,255,255,0.8);
+.track-block:hover {
+    background: rgba(255, 255, 255, 0.8);
 }
 
 /* TRACK TITLE */
-.track-title{
-    font-size:18px;
-    font-weight:600;
-    color:#111;
-    margin-bottom:10px;
+.track-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 10px;
 }
 
 /* ---------- NAME GRID ---------- */
 
-.committee-grid{
-    display:grid;
-    grid-template-columns:340px 1fr;
-    column-gap:60px;
-    row-gap:6px;
+.committee-grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    column-gap: 60px;
+    row-gap: 6px;
 
-    font-size:15.5px;
-    line-height:1.55;
+    font-size: 15.5px;
+    line-height: 1.55;
 }
 
 /* names */
-.name{
-    font-weight:500;
-    color:#111;
+.name {
+    font-weight: 500;
+    color: #111;
 }
 
 /* institute */
-.affiliation{
-    color:#555;
+.affiliation {
+    color: #555;
 }
 
 /* ---------- RESPONSIVE ---------- */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .committee-grid{
-        grid-template-columns:1fr;
+    .committee-grid {
+        grid-template-columns: 1fr;
     }
 
-    .track-block{
-        padding:14px;
+    .track-block {
+        padding: 14px;
     }
 }
 
 /* Last organising block → transition spacing */
-.committee-block-last{
+.committee-block-last {
     /* margin-bottom:42px;
     padding-bottom:28px;
     border-bottom:1px solid rgba(0,0,0,0.08); */
-    border-top:1px solid rgba(0,0,0,0.08);
-    margin-top:42px;
-    padding-top:28px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin-top: 42px;
+    padding-top: 28px;
 }
-.committee-heading + .committee-block{
-    margin-top:10px;
+
+.committee-heading+.committee-block {
+    margin-top: 10px;
 }
 
 .committee-block-last .role {
@@ -2324,3 +2330,39 @@ body {
     row-gap: 13px;
 }
 
+@media (max-width: 425px) {
+    .hero-content {
+        padding-left: 0px;
+    }
+
+    .hero-title-section h1 {
+        font-size: 20px;
+    }
+
+    .logo-section img {
+        width: 211px;
+    }
+    .supporting-organizers {
+        margin-top: 0px;
+    }
+    .support-org-logos img{
+        height: 46px;
+    }
+    .supporting-organizers p {
+        font-size: 18px;
+    }
+     .co-organizers p {
+        font-size: 18px;
+    }
+    .org-icon {
+    width: 80px;
+    height: 80px;
+    }
+    .date-section p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .date-section p{
+        margin-top: 0px;
+    }
+}

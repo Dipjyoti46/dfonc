@@ -235,7 +235,7 @@ window.addEventListener('scroll', function () {
             overlay.style.opacity = 0.9 + (scrollPosition / hero.offsetHeight) * 0.1;
         }
 
-        if (content) {
+        if (content && this.window.innerWidth > 768 ) {
             content.style.transform = `translateY(${scrollPosition * 0.3}px)`;
         }
     }
