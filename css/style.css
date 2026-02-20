@@ -2085,10 +2085,10 @@ body {
 .committee-section {
     margin-top: 8px;
 }
-
 /* each role block */
 .committee-row {
     margin-bottom: 22px;
+    padding-left: 40px;
 }
 
 /* role title */
@@ -2105,6 +2105,7 @@ body {
     grid-template-columns: 260px 1fr;
     column-gap: 90px;
     row-gap: 8px;
+    /* padding-left: 40px; */
 }
 
 /* name */
@@ -2212,7 +2213,9 @@ body {
 #scientific-committee {
     max-width: 1100px;
 }
-
+.committee-block-last{
+    padding-left: 40px;
+}
 /* ---------- THEME BLOCK ---------- */
 
 .theme-block {
