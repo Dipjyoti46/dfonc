@@ -461,7 +461,7 @@ body {
     font-size: 26px;
     color: #fff;
     line-height: 1.3;
-    padding-left: 25px;
+    padding-left: 110px;
 }
 
 /* .organizers {
@@ -1680,6 +1680,9 @@ body {
         font-weight: 600;
         line-height: 32px;
         /* 133.333% */
+    }
+    .conference-date {
+        padding-left: 0;
     }
 
     .hero-title-asia h1 span {
