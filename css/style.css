@@ -983,8 +983,9 @@ body {
     line-height: 1.2;
     color: #2e3f92;
     margin-bottom: 30px;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
+    margin-top : 15px;
 }
 
 .theme-title::after {
@@ -993,7 +994,7 @@ body {
     width: 80px;
     height: 3px;
     background: linear-gradient(90deg, #2e3f92 0%, #8D1A1A 100%);
-    margin: 15px auto 0;
+    /* margin: 15px auto 0; */
     border-radius: 2px;
 }
 
@@ -2255,12 +2256,22 @@ body {
 
 .track-block {
     margin-top: 28px;
-    padding: 18px 22px;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(6px);
-    border-radius: 6px;
+    padding: 18px 24px;
 
-    transition: all .25s ease;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(8px);
+
+    border-radius: 8px;
+
+    /* ✅ subtle academic elevation */
+    border: 1px solid rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 2px 6px rgba(0,0,0,0.04),
+        0 8px 18px rgba(0,0,0,0.05);
+
+    transition: all 0.25s ease; 
+    /* border-left: 3px solid #2e3f92; */
 }
 
 /* subtle interaction (UX polish) */
