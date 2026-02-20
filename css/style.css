@@ -556,7 +556,7 @@ body {
 
 .co-org-logos img {
     width: 143px;
-    height: 51px;
+    height: 60px;
     aspect-ratio: 285/86;
 
 }
@@ -597,8 +597,8 @@ body {
 }
 
 .support-org-logos img {
-    width: 200px;
-    height: 60px;
+    width: 220px;
+    height: 87px;
     aspect-ratio: 285/86;
 
 }
@@ -1947,12 +1947,13 @@ body {
 
 .footer-top-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: auto 1fr;
+    /* gap: 2rem; */
 }
 
 .footer-logos {
     display: flex;
+    justify-content: space-between;
     gap: 1.5rem;
     align-items: center;
 }
@@ -1964,6 +1965,7 @@ body {
 .footer-logos img:last-child {
     width: 180px;
 }
+
 
 .footer-description {
     max-width: 640px;
