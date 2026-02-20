@@ -468,7 +468,7 @@ const scientificCommittee = [
                         affiliation: "Indian Institute of Technology Guwahati"
                     },
                     {
-                        name: "Leeladhar Ganvir",
+                        name: "Dr. Leeladhar Ganvir",
                         affiliation: "Klynveld Peat Marwick Goerdeler (KPMG)"
                     },
                 ]
@@ -477,7 +477,7 @@ const scientificCommittee = [
                 title: "Track 4: Business & Entrepreneurship",
                 chairs: [
                     {
-                        name: "Prof. Soumen Das",
+                        name: "Dr. Soumen Das",
                         affiliation: "Indian Institute of Technology Guwahati"
                     },
                 ]
