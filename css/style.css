@@ -1838,20 +1838,20 @@ body {
     }
 
     #timeline-bar-1 {
-        width: 30%;
+        width: 33%;
     }
 
     #timeline-bar-2 {
-        width: 30%;
+        width: 33%;
     }
 
     #timeline-bar-3 {
-        width: 30%;
+        width: 33%;
     }
 
-    #timeline-bar-4 {
+    /* #timeline-bar-4 {
         width: 30%;
-    }
+    } */
 
     .timeline {
         margin: 90px 0px 90px 0px;
