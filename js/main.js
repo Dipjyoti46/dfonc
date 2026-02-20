@@ -222,24 +222,6 @@ animationStyles.textContent = `
 `;
 document.head.appendChild(animationStyles);
 
-// Parallax Effect for Hero Section
-window.addEventListener('scroll', function () {
-    const hero = document.querySelector('.hero');
-    const scrollPosition = window.pageYOffset;
-
-    if (hero && scrollPosition < hero.offsetHeight) {
-        const overlay = document.querySelector('.hero-overlay');
-        const content = document.querySelector('.hero-content');
-
-        if (overlay) {
-            overlay.style.opacity = 0.9 + (scrollPosition / hero.offsetHeight) * 0.1;
-        }
-
-        if (content && this.window.innerWidth > 768 ) {
-            content.style.transform = `translateY(${scrollPosition * 0.3}px)`;
-        }
-    }
-});
 
 // Active Menu Link on Scroll
 window.addEventListener('scroll', function () {

@@ -311,10 +311,14 @@ body {
     margin-inline: auto;
 
     padding-inline: clamp(32px, 7vw, 160px);
-    padding-block: clamp(96px, 12vh, 160px);
+    padding-block: clamp(32px, 4vw, 160px);
 
     row-gap: clamp(18px, 3vh, 27px);
     padding-right: 0px;
+}
+
+.hero-row-gap {
+    height: 30px;
 }
 
 .logo-section {
@@ -704,19 +708,19 @@ body {
     height: 46px;
     right: 44px;
     border-radius: 23px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    /* border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; */
     z-index: 3;
 }
 
-#timeline-bar-4 {
+/* #timeline-bar-4 {
     background: #A71A19;
     width: 75%;
     height: 46px;
     right: 66px;
     border-radius: 23px;
     z-index: 4;
-}
+} */
 
 .timeline-content {
     position: absolute;
@@ -1752,11 +1756,11 @@ body {
 }
 
 @media (max-width: 670px) {
-    
-    .hamburger-menu{
+
+    .hamburger-menu {
         left: 5px;
     }
-    
+
     .logo-section {
         display: flex;
         justify-content: center;
@@ -2343,27 +2347,34 @@ body {
     .logo-section img {
         width: 211px;
     }
+
     .supporting-organizers {
         margin-top: 0px;
     }
-    .support-org-logos img{
+
+    .support-org-logos img {
         height: 46px;
     }
+
     .supporting-organizers p {
         font-size: 18px;
     }
-     .co-organizers p {
+
+    .co-organizers p {
         font-size: 18px;
     }
+
     .org-icon {
-    width: 80px;
-    height: 80px;
+        width: 80px;
+        height: 80px;
     }
-    .date-section p{
+
+    .date-section p {
         font-size: 20px;
         line-height: 30px;
     }
-    .date-section p{
+
+    .date-section p {
         margin-top: 0px;
     }
 }
