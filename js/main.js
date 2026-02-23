@@ -370,6 +370,10 @@ const scientificCommittee = [
                         name: "Prof. Neelarnab Dutta",
                         affiliation: "National Institute of Design Jorhat"
                     },
+                    {
+                        name: "Prof. Shiv Kumar Verma",
+                        affiliation: "Indian Institute of Technology Jodhpur"
+                    }
                 ]
             },
             {
