@@ -1791,101 +1791,170 @@ body {
 .adv-header h2 {
     margin-bottom: 6px;
 }
+/* ================= PREMIUM ADV SECTION ================= */
 
-.adv-collab {
-    color: #777;
-    font-size: 15px;
+.adv-section{
+    padding:110px 0 90px;
 }
 
-.adv-collab span {
-    color: #2e3f92;
-    font-weight: 600;
+/* HEADER */
+
+.adv-header h2{
+    margin-bottom:6px;
 }
 
-/* GRID */
-
-.adv-wrapper {
-    margin-top: 55px;
-    display: grid;
-    grid-template-columns: 1.6fr 0.8fr;
-    gap: 80px;
+.adv-collab{
+    color:#777;
+    font-size:15px;
 }
 
-/* CONTENT ITEMS */
-
-.adv-item {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    padding: 18px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+.adv-collab span{
+    color:#2e3f92;
+    font-weight:600;
 }
 
-.adv-title {
-    font-size: 12px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #9a9a9a;
-    font-weight: 600;
+
+/* ================= MAIN GRID ================= */
+
+.adv-main-layout{
+    margin-top:55px;
+
+    display:grid;
+    grid-template-columns:1.6fr 0.8fr;
+    gap:80px;
 }
 
-.adv-text {
-    line-height: 1.75;
-    color: #222;
+
+/* ================= LEFT FLOW ================= */
+
+.adv-all-content{
+    display:flex;
+    flex-direction:column;
 }
 
-.adv-long {
-    color: #444;
+
+/* ================= ORGANIZING STRIP ================= */
+
+.adv-org-strip{
+    margin-top:48px;
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
 
-/* ===== RIGHT FEATURE PANEL ===== */
-
-.adv-highlight {
-    display: flex;
-    align-items: flex-start;
+.adv-org-number{
+    font-family:'Archivo',sans-serif;
+    font-size:34px;
+    font-weight:700;
+    color:#d4a017;
+    opacity:.85;
 }
 
-.adv-highlight-inner {
-    position: sticky;
-    top: 120px;
+.adv-org-text{
+    position:relative;
+    padding:8px 18px 8px 16px;
 
-    padding: 26px;
-    background: rgba(255,255,255,0.7);
-    backdrop-filter: blur(8px);
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
 
-    border-radius: 10px;
+    background:#111;
+    color:#fff;
+
+    clip-path:polygon(
+        0 0,
+        92% 0,
+        100% 100%,
+        0% 100%
+    );
+}
+
+.adv-org-text::after{
+    content:"";
+    position:absolute;
+    right:10px;
+    bottom:-6px;
+
+    width:32px;
+    height:3px;
+    background:#d4a017;
+}
+
+
+/* ================= CONTENT ================= */
+
+.adv-content{
+    margin-top:25px;
+}
+
+.adv-item{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:30px;
+
+    padding:18px 0;
+    border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+.adv-title{
+    font-size:12px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    color:#9a9a9a;
+    font-weight:600;
+}
+
+.adv-text{
+    line-height:1.75;
+    color:#222;
+}
+
+.adv-long{
+    color:#444;
+}
+
+
+/* ================= STICKY PANEL ================= */
+
+.adv-highlight{
+    position:relative;
+}
+
+.adv-highlight-inner{
+    position:sticky;
+    top:120px;
+
+    padding:26px;
+
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(10px);
+
+    border-radius:10px;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,0.08),
-        0 2px 6px rgba(0,0,0,0.05);
+        0 12px 40px rgba(0,0,0,0.08),
+        0 3px 10px rgba(0,0,0,0.05);
 }
 
-.adv-highlight-inner img {
-    width: 100%;
-    max-width: 320px;
+.adv-highlight-inner img{
+    width:100%;
+    max-width:320px;
 }
 
-.adv-highlight-label {
-    margin-top: 14px;
-    font-size: 13px;
-    color: #666;
-    text-align: center;
+.adv-highlight-label{
+    margin-top:14px;
+    font-size:13px;
+    color:#666;
+    text-align:center;
 }
 
-/* transition line */
 
-/* .adv-section::after {
-    content:"";
-    display:block;
-    margin-top:80px;
-    height:1px;
-    background:rgba(0,0,0,0.06);
-} */
-
-/* MOBILE */
+/* ================= MOBILE ================= */
 
 @media(max-width:900px){
 
-    .adv-wrapper{
+    .adv-main-layout{
         grid-template-columns:1fr;
         gap:40px;
     }
