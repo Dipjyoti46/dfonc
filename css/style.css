@@ -1360,6 +1360,24 @@ body {
     z-index: -1;
 }
 
+.adv-section {
+    position: relative;
+}
+
+.adv-section {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../images/images/bg_6.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
 .organisation-container {
     position: relative;
     overflow: hidden;
@@ -1395,11 +1413,11 @@ body {
     background-image: url('../images/images/bg_6.png');
 }
 
-/* .jury-container {
+.submission-container {
     position: relative;
 }
 
-.jury-container::before {
+.submission-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1408,10 +1426,46 @@ body {
     bottom: 0px;
     background-image: url('../images/images/bg_1.png');
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     transform: rotate(0deg);
     z-index: -1;
+}
+.contact-section {
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../images/images/bg_6.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+/* .jury-container {
+    position: relative;
+    }
+    
+    .jury-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        background-image: url('../images/images/bg_1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotate(0deg);
+        z-index: -1;
 } */
 
 /* Media Overlay Background */
