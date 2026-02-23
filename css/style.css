@@ -1699,6 +1699,153 @@ body {
 .footer-socials i:hover {
     color: #2563eb;
 }
+/* ================= PREMIUM COLLABORATION SECTION ================= */
+
+.adv-section {
+    padding: 110px 0 90px;
+    position: relative;
+}
+
+/* elegant divider */
+.adv-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 72px;
+    height: 2px;
+
+    background: #2e3f92;
+}
+
+.adv-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 72px;
+
+    width: 28px;
+    height: 2px;
+
+    background: #d4a017;
+}
+
+
+/* HEADER */
+
+.adv-header h2 {
+    margin-bottom: 6px;
+}
+
+.adv-collab {
+    color: #777;
+    font-size: 15px;
+}
+
+.adv-collab span {
+    color: #2e3f92;
+    font-weight: 600;
+}
+
+/* GRID */
+
+.adv-wrapper {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1.6fr 0.8fr;
+    gap: 80px;
+}
+
+/* CONTENT ITEMS */
+
+.adv-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.adv-title {
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+.adv-text {
+    line-height: 1.75;
+    color: #222;
+}
+
+.adv-long {
+    color: #444;
+}
+
+/* ===== RIGHT FEATURE PANEL ===== */
+
+.adv-highlight {
+    display: flex;
+    align-items: flex-start;
+}
+
+.adv-highlight-inner {
+    position: sticky;
+    top: 120px;
+
+    padding: 26px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(8px);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08),
+        0 2px 6px rgba(0,0,0,0.05);
+}
+
+.adv-highlight-inner img {
+    width: 100%;
+    max-width: 320px;
+}
+
+.adv-highlight-label {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
+/* transition line */
+
+/* .adv-section::after {
+    content:"";
+    display:block;
+    margin-top:80px;
+    height:1px;
+    background:rgba(0,0,0,0.06);
+} */
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .adv-wrapper{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .adv-item{
+        grid-template-columns:1fr;
+        gap:6px;
+    }
+
+    .adv-highlight-inner{
+        position:relative;
+        margin:auto;
+    }
+}
 
 /* ================= ORGANISING COMMITTEE ================= */
 
