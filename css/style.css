@@ -609,6 +609,10 @@ body {
     aspect-ratio: 285/86;
 }
 
+#emblem{
+       width: auto !important; 
+    }
+
 
 .hero-title-asia .org-icon {
     display: block;
@@ -1540,7 +1544,7 @@ body {
 }
 
 /* Responsive Styles */
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
     .container {
         padding: 0 80px;
     }
@@ -1571,7 +1575,10 @@ body {
     .jury-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+    #emblem{
+       width: auto !important; 
+    }
+} */
 
 @media (max-width: 1024px) {
     .container {
@@ -1833,6 +1840,15 @@ body {
         list-style-position: inherit;
     }
 
+    .support-org-logos img {
+    width: 181px;
+    height: 65px;
+    }
+
+    #emblem{
+       width: auto; 
+    }
+
     .timeline-section {
         padding: 15px 45px;
     }
@@ -2062,6 +2078,10 @@ body {
     .footer-description {
         max-width: 100%;
         text-align: center;
+    }
+
+    #emblem{
+       width: auto !important; 
     }
 }
 
@@ -2349,6 +2369,10 @@ body {
     .track-block {
         padding: 14px;
     }
+
+    #emblem{
+       width: auto !important; 
+    }
 }
 
 /* Last organising block → transition spacing */
@@ -2393,6 +2417,11 @@ body {
 
     .support-org-logos img {
         height: 46px;
+        width: 145px;
+    }
+
+    #emblem{
+       width: auto !important; 
     }
 
     .supporting-organizers p {
@@ -2402,6 +2431,13 @@ body {
     .co-organizers p {
         font-size: 18px;
     }
+
+    .co-org-logos img {
+    width: 120px;
+    height: 45
+    px;
+    aspect-ratio: 285 / 86;
+}
 
     .org-icon {
         width: 80px;
