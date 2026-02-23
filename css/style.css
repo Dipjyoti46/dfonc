@@ -219,7 +219,7 @@ body {
 }
 
 .hero-row-gap {
-    height: 30px;
+    height: 10px;
 }
 
 .logo-section {
@@ -296,13 +296,14 @@ body {
 .hero-title-section h1 {
     color: #FFF;
     font-family: Inter;
-    font-size: 38px;
     font-style: normal;
     font-weight: 700;
     margin: 0;
-    max-width: 600px;
-    font-size: clamp(28px, 3.2vw, 38px);
+    padding-left: 1px;
+    max-width: 635px;
     line-height: 1.15;
+    text-align:center;
+    font-size: clamp(20px, 2.08vw, 30px);
 }
 
 .hero-title-asia {
@@ -312,22 +313,6 @@ body {
 
 }
 
-.hero-title-asia h1 span {
-    font-family: fontface__阿里巴巴普惠体-regular__34__757830171295;
-    color: #ffffff;
-    font-family: Inter;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    margin: 0;
-    max-width: 600px;
-    font-size: clamp(28px, 3.2vw, 38px);
-    line-height: 1.15;
-}
-
-.hero-title-section h1 {
-    text-align: center;
-}
 
 .hero-title-asia .title-wrapper {
     align-items: center;
@@ -2045,7 +2030,7 @@ body {
     }
 
     .hero-title-section h1 {
-        font-size: 30px;
+        font-size: 23px;
     }
 
     .overview-section .container {
@@ -2385,7 +2370,7 @@ body {
         color: #FFF;
         text-align: center;
         font-family: Arial;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 30px;
