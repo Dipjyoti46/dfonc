@@ -680,7 +680,7 @@ body {
 
 /* Alternate up/down layout */
 .timeline-bar:nth-child(even) .timeline-content {
-    margin-top: -111px;
+    margin-top: -75px;
 }
 
 
