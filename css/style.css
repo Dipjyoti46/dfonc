@@ -722,7 +722,7 @@ body {
 .overview-content h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 72px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 23px;
@@ -731,7 +731,7 @@ body {
 .overview-content p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #000;
     text-align: left;
@@ -773,7 +773,7 @@ body {
 .conference-description {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #000;
     max-width: 974px;
@@ -803,7 +803,7 @@ body {
 .call-for-papers h2 {
     color: #2e3f92;
     font-family: Archivo;
-    font-size: 80px;
+    font-size: 69px;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
@@ -846,7 +846,7 @@ body {
 
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -929,7 +929,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     color: #2e3f92;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.35;
     margin: 0;
     letter-spacing: 0.2px;
@@ -978,8 +978,9 @@ body {
 
 .submission-type p {
     font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #555;
     /* background: #ffffff00; */
 }
 
@@ -1002,7 +1003,7 @@ body {
 .submission-note p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 28px;
     color: #8D1A1A;
     margin: 0 auto;
@@ -1032,7 +1033,7 @@ body {
 .date-card p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -1041,7 +1042,7 @@ body {
 .date-card .dates {
     font-family: 'PT Sans', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 40px;
     padding-left: 10px;
     color: #333;
@@ -1572,7 +1573,7 @@ body {
 .contact-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 72px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 50px;
@@ -1764,32 +1765,6 @@ body {
     position: relative;
 }
 
-/* elegant divider */
-.adv-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 72px;
-    height: 2px;
-
-    background: #2e3f92;
-}
-
-.adv-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 72px;
-
-    width: 28px;
-    height: 2px;
-
-    background: #d4a017;
-}
-
-
 /* HEADER */
 
 .adv-header {
@@ -1839,10 +1814,9 @@ body {
 
 .adv-main-layout {
     margin-top: 55px;
-
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1.6fr 0.8fr;
-    gap: 80px;
+    gap: 80px; */
 }
 
 
@@ -2031,7 +2005,7 @@ body {
 }
 
 .committee-heading {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #1f2d5a;
 
@@ -2055,7 +2029,7 @@ body {
 }
 
 .committee-heading {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #1f2d5a;
 
@@ -2469,7 +2443,7 @@ body {
         color: #FFF;
         text-align: center;
         font-family: Arial;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 30px;
@@ -2494,7 +2468,7 @@ body {
         color: #FFF;
         text-align: center;
         font-family: Arial;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 600;
         line-height: 32px;
@@ -2511,7 +2485,7 @@ body {
     }
 
     .conference-date {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .organizers {
@@ -2663,7 +2637,7 @@ body {
         color: #FFF;
         text-align: center;
         font-family: Arial;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 600;
         line-height: 32px;

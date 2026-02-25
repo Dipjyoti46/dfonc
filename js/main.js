@@ -379,6 +379,10 @@ const scientificCommittee = [
                         name: "Prof. Sugandh Malhotra",
                         affiliation: "IDC School of Design, IIT Bombay"
                     },
+                    {
+                        name: "Prof. Abhishek Singh",
+                        affiliation: "Indian Institute of Technology Guwahati"
+                    },
                 ]
             },
             {
