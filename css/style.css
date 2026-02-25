@@ -680,7 +680,7 @@ body {
 
 /* Alternate up/down layout */
 .timeline-bar:nth-child(even) .timeline-content {
-    margin-top: -111px;
+    margin-top: -75px;
 }
 
 
@@ -944,7 +944,7 @@ body {
 .topic-description p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.9;
     color: #3b3b3d;
     margin: 0;
@@ -1512,9 +1512,9 @@ body {
 }
 
 .submission-section p {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 21.5px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -1523,9 +1523,9 @@ body {
 
 .submission-section ol,
 .submission-section ul {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
     color: #000;
     margin-bottom: 25px;
@@ -1884,7 +1884,7 @@ body {
 }
 
 .adv-title {
-    font-size: 12px;
+    font-size: 14.5px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     color: #9a9a9a;
@@ -1894,6 +1894,7 @@ body {
 .adv-text {
     line-height: 1.75;
     color: #222;
+    font-size: 16.5px;
 }
 
 .adv-long {
@@ -1901,38 +1902,40 @@ body {
 }
 
 
-/* ================= STICKY PANEL ================= */
+/* ===== AWARD TAG LAYOUT ===== */
 
-.adv-highlight {
-    position: relative;
+.adv-awards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px 18px;
 }
 
-.adv-highlight-inner {
-    position: sticky;
-    top: 120px;
+/* Base tag */
 
-    padding: 26px;
+.award-tag{
+    padding:8px 16px;
 
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:.5px;
 
-    border-radius: 10px;
+    border:1px solid rgba(0,0,0,0.15);
+    border-radius:30px;
 
-    box-shadow:
-        0 12px 40px rgba(0, 0, 0, 0.08),
-        0 3px 10px rgba(0, 0, 0, 0.05);
+    background:#fff;
+    color:#222;
+
+    transition:all .25s ease;
 }
 
-.adv-highlight-inner img {
-    width: 100%;
-    max-width: 320px;
+.award-tag:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-.adv-highlight-label {
-    margin-top: 14px;
-    font-size: 13px;
-    color: #666;
-    text-align: center;
+.adv-text.country p{
+    color: #3f3f3f;
+    font-weight: bold;
 }
 
 
