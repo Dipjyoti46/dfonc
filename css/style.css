@@ -302,7 +302,7 @@ body {
     padding-left: 1px;
     max-width: 635px;
     line-height: 1.15;
-    text-align:center;
+    text-align: center;
     font-size: clamp(20px, 2.08vw, 30px);
 }
 
@@ -929,7 +929,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     color: #2e3f92;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.35;
     margin: 0;
     letter-spacing: 0.2px;
@@ -960,7 +960,7 @@ body {
 .types-submissions h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 50px;
@@ -979,14 +979,14 @@ body {
 .submission-type p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     /* background: #ffffff00; */
 }
 
 .submission-type h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.3;
     color: #000000;
     margin: 0;
@@ -1002,7 +1002,7 @@ body {
 .submission-note p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 28px;
     color: #8D1A1A;
     margin: 0 auto;
@@ -1017,7 +1017,7 @@ body {
 .important-dates h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 50px;
@@ -1032,7 +1032,7 @@ body {
 .date-card p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -1041,7 +1041,7 @@ body {
 .date-card .dates {
     font-family: 'PT Sans', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 40px;
     padding-left: 10px;
     color: #333;
@@ -1056,7 +1056,7 @@ body {
 .organisation-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 40px;
@@ -1065,7 +1065,7 @@ body {
 .org-description {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 30px;
     color: #333;
     margin-bottom: 60px;
@@ -1144,7 +1144,7 @@ body {
     color: #434343;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Segoe UI";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 131%;
@@ -1166,7 +1166,7 @@ body {
 .jury-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 50px;
@@ -1190,7 +1190,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.3s ease;
 }
 
@@ -1378,6 +1378,7 @@ body {
     transform: rotate(0deg);
     z-index: -1;
 }
+
 .organisation-container {
     position: relative;
     overflow: hidden;
@@ -1431,6 +1432,7 @@ body {
     transform: rotate(0deg);
     z-index: -1;
 }
+
 .contact-section {
     position: relative;
 }
@@ -1449,6 +1451,7 @@ body {
     transform: rotate(0deg);
     z-index: -1;
 }
+
 /* .jury-container {
     position: relative;
     }
@@ -1501,7 +1504,7 @@ body {
 .submission-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 40px;
@@ -1510,7 +1513,7 @@ body {
 .submission-section p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -1521,7 +1524,7 @@ body {
 .submission-section ul {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 30px;
     color: #000;
     margin-bottom: 25px;
@@ -1753,6 +1756,7 @@ body {
 .footer-socials i:hover {
     color: #2563eb;
 }
+
 /* ================= PREMIUM COLLABORATION SECTION ================= */
 
 .adv-section {
@@ -1788,185 +1792,200 @@ body {
 
 /* HEADER */
 
-.adv-header h2 {
-    margin-bottom: 6px;
+.adv-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.avada-banner img {
+    width: 100%;
+}
+
+.adv-header h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1;
+    color: #2e3f92;
+    margin-bottom: 50px;
+}
+
 /* ================= PREMIUM ADV SECTION ================= */
 
-.adv-section{
-    padding:110px 0 90px;
+.adv-section {
+    padding: 110px 0 90px;
 }
 
 /* HEADER */
 
-.adv-header h2{
-    margin-bottom:6px;
+.adv-header h2 {
+    margin-bottom: 6px;
 }
 
-.adv-collab{
-    color:#777;
-    font-size:15px;
+.adv-collab {
+    color: #777;
+    font-size: 15px;
 }
 
-.adv-collab span{
-    color:#2e3f92;
-    font-weight:600;
+.adv-collab span {
+    color: #2e3f92;
+    font-weight: 600;
 }
 
 
 /* ================= MAIN GRID ================= */
 
-.adv-main-layout{
-    margin-top:55px;
+.adv-main-layout {
+    margin-top: 55px;
 
-    display:grid;
-    grid-template-columns:1.6fr 0.8fr;
-    gap:80px;
+    display: grid;
+    grid-template-columns: 1.6fr 0.8fr;
+    gap: 80px;
 }
 
 
 /* ================= LEFT FLOW ================= */
 
-.adv-all-content{
-    display:flex;
-    flex-direction:column;
+.adv-all-content {
+    display: flex;
+    flex-direction: column;
 }
 
 
 /* ================= ORGANIZING STRIP ================= */
 
-.adv-org-strip{
-    margin-top:48px;
-    display:flex;
-    align-items:center;
-    gap:14px;
+.adv-org-strip {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.adv-org-number{
-    font-family:'Archivo',sans-serif;
-    font-size:34px;
-    font-weight:700;
-    color:#d4a017;
-    opacity:.85;
+.adv-org-number {
+    font-family: 'Archivo', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #d4a017;
+    opacity: .85;
 }
 
-.adv-org-text{
-    position:relative;
-    padding:8px 18px 8px 16px;
+.adv-org-text {
+    position: relative;
+    padding: 8px 18px 8px 16px;
 
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:1.2px;
-    text-transform:uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 
-    background:#111;
-    color:#fff;
+    background: #111;
+    color: #fff;
 
-    clip-path:polygon(
-        0 0,
-        92% 0,
-        100% 100%,
-        0% 100%
-    );
+    clip-path: polygon(0 0,
+            92% 0,
+            100% 100%,
+            0% 100%);
 }
 
-.adv-org-text::after{
-    content:"";
-    position:absolute;
-    right:10px;
-    bottom:-6px;
+.adv-org-text::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: -6px;
 
-    width:32px;
-    height:3px;
-    background:#d4a017;
+    width: 32px;
+    height: 3px;
+    background: #d4a017;
 }
 
 
 /* ================= CONTENT ================= */
 
-.adv-content{
-    margin-top:25px;
+.adv-content {
+    margin-top: 25px;
 }
 
-.adv-item{
-    display:grid;
-    grid-template-columns:220px 1fr;
-    gap:30px;
+.adv-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 30px;
 
-    padding:18px 0;
-    border-bottom:1px solid rgba(0,0,0,0.05);
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.adv-title{
-    font-size:12px;
-    letter-spacing:1.4px;
-    text-transform:uppercase;
-    color:#9a9a9a;
-    font-weight:600;
+.adv-title {
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    font-weight: 600;
 }
 
-.adv-text{
-    line-height:1.75;
-    color:#222;
+.adv-text {
+    line-height: 1.75;
+    color: #222;
 }
 
-.adv-long{
-    color:#444;
+.adv-long {
+    color: #444;
 }
 
 
 /* ================= STICKY PANEL ================= */
 
-.adv-highlight{
-    position:relative;
+.adv-highlight {
+    position: relative;
 }
 
-.adv-highlight-inner{
-    position:sticky;
-    top:120px;
+.adv-highlight-inner {
+    position: sticky;
+    top: 120px;
 
-    padding:26px;
+    padding: 26px;
 
-    background:rgba(255,255,255,0.75);
-    backdrop-filter:blur(10px);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
 
-    border-radius:10px;
+    border-radius: 10px;
 
     box-shadow:
-        0 12px 40px rgba(0,0,0,0.08),
-        0 3px 10px rgba(0,0,0,0.05);
+        0 12px 40px rgba(0, 0, 0, 0.08),
+        0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
-.adv-highlight-inner img{
-    width:100%;
-    max-width:320px;
+.adv-highlight-inner img {
+    width: 100%;
+    max-width: 320px;
 }
 
-.adv-highlight-label{
-    margin-top:14px;
-    font-size:13px;
-    color:#666;
-    text-align:center;
+.adv-highlight-label {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
 }
 
 
 /* ================= MOBILE ================= */
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-    .adv-main-layout{
-        grid-template-columns:1fr;
-        gap:40px;
+    .adv-main-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
-    .adv-item{
-        grid-template-columns:1fr;
-        gap:6px;
+    .adv-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
     }
 
-    .adv-highlight-inner{
-        position:relative;
-        margin:auto;
+    .adv-highlight-inner {
+        position: relative;
+        margin: auto;
     }
 }
 
