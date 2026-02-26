@@ -2310,6 +2310,11 @@ body {
         border-left: none;
         border-top: 2px solid #333;
         padding-top: 30px;
+        margin-top: 70px;
+    }
+
+    .overview-sidebar h3 {
+        line-height: 45px;
     }
 
     /* Responsive Styles for Submission Section */
@@ -2347,7 +2352,8 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-            .topic-badge p {
+
+    .topic-badge p {
         font-size: 17px;
     }
 
@@ -2366,37 +2372,52 @@ body {
     element.style {
         font-size: 17px;
     }
-    .submission-types{
+
+    .submission-types {
         gap: 5px;
-    } 
-    .submission-types p{
+    }
+
+    .submission-types p {
         font-size: 17px;
     }
-    .submission-note p{
+
+    .submission-note p {
         font-size: 17px;
 
     }
-    .date-card p{
+
+    .date-card p {
         font-size: 17px;
     }
-    .date-card .dates{
+
+    .date-card .dates {
         font-size: 17px;
     }
-    .adv-title{
+
+    .adv-title {
         font-size: 15px;
     }
-     .adv-text{
+
+    .adv-text {
         font-size: 15px;
     }
-    .submission-section p{
-        font-size: 17px;    
-    }
-    .submission-section li{
+
+    .submission-section p {
         font-size: 17px;
     }
-    .topic-card{
+
+    .submission-section li {
+        font-size: 17px;
+    }
+
+    .topic-card {
         min-height: 200px;
     }
+
+    .overview-section .container {
+        gap: 0px;
+    }
+
 
 }
 
@@ -3153,15 +3174,17 @@ body {
     .date-section p {
         margin-top: 0px;
     }
-    .date-card p{
+
+    .date-card p {
         font-size: 13px;
         gap: 0px;
     }
-    .date-card .dates{
+
+    .date-card .dates {
         font-size: 14px;
     }
 
-     /* .submission-section p {
+    /* .submission-section p {
         font-size: 13px;
     }
 
