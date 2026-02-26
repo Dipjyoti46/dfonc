@@ -1514,7 +1514,7 @@ body {
 .submission-section p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 21.5px;
+    font-size: 17px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -1525,7 +1525,7 @@ body {
 .submission-section ul {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     color: #000;
     margin-bottom: 25px;
@@ -1844,7 +1844,8 @@ body {
     margin-top: 60px;
     margin-bottom: 18px;
     position: relative;
-    padding-bottom: 10px;}
+    padding-bottom: 10px;
+}
 
 .adv-org-text {
     font-size: 24px;
@@ -1904,36 +1905,36 @@ body {
 
 /* ===== AWARD TAG LAYOUT ===== */
 
-.adv-awards{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px 18px;
+.adv-awards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 18px;
 }
 
 /* Base tag */
 
-.award-tag{
-    padding:8px 16px;
+.award-tag {
+    padding: 8px 16px;
 
-    font-size:13px;
-    font-weight:500;
-    letter-spacing:.5px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .5px;
 
-    border:1px solid rgba(0,0,0,0.15);
-    border-radius:30px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
 
-    background:#fff;
-    color:#222;
+    background: #fff;
+    color: #222;
 
-    transition:all .25s ease;
+    transition: all .25s ease;
 }
 
-.award-tag:hover{
-    transform:translateY(-2px);
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+.award-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-.adv-text.country p{
+.adv-text.country p {
     color: #3f3f3f;
     font-weight: bold;
 }
@@ -2346,6 +2347,56 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+            .topic-badge p {
+        font-size: 17px;
+    }
+
+    .topic-description p {
+        font-size: 16px;
+    }
+
+    .cfp-intro p {
+        font-size: 18.5px;
+    }
+
+    .cfp-intro p b {
+        font-size: 18.5px;
+    }
+
+    element.style {
+        font-size: 17px;
+    }
+    .submission-types{
+        gap: 5px;
+    } 
+    .submission-types p{
+        font-size: 17px;
+    }
+    .submission-note p{
+        font-size: 17px;
+
+    }
+    .date-card p{
+        font-size: 17px;
+    }
+    .date-card .dates{
+        font-size: 17px;
+    }
+    .adv-title{
+        font-size: 15px;
+    }
+     .adv-text{
+        font-size: 15px;
+    }
+    .submission-section p{
+        font-size: 17px;    
+    }
+    .submission-section li{
+        font-size: 17px;
+    }
+    .topic-card{
+        min-height: 200px;
+    }
 
 }
 
@@ -2538,6 +2589,7 @@ body {
         transform: none;
     }
 
+
     .adv-section {
         padding: 60px 20px;
     }
@@ -2588,7 +2640,7 @@ body {
     .cfp-item p,
     .date-card p,
     .org-description {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .jury-grid {
@@ -2633,6 +2685,64 @@ body {
         justify-content: space-between;
         align-items: center;
     }
+
+    .topic-badge p {
+        font-size: 14px;
+    }
+
+    .topic-description p {
+        font-size: 13px;
+    }
+
+    .cfp-intro p {
+        font-size: 15.5px;
+    }
+
+    .cfp-intro p b {
+        font-size: 15.5px;
+    }
+
+    element.style {
+        font-size: 16px;
+    }
+
+    .submission-types {
+        gap: 5px;
+    }
+
+    .submission-types p {
+        font-size: 16px;
+    }
+
+    .submission-note p {
+        font-size: 16px;
+
+    }
+
+    .date-card p {
+        font-size: 16px;
+    }
+
+    .date-card .dates {
+        font-size: 16px;
+    }
+
+    .adv-title {
+        font-size: 14px;
+    }
+
+    .adv-text {
+        font-size: 14px;
+    }
+
+    .submission-section p {
+        font-size: 15.5px;
+    }
+
+    .submission-section li {
+        font-size: 14.5px;
+    }
+
 }
 
 @media (max-width: 670px) {
@@ -2860,6 +2970,67 @@ body {
         padding: 0 20px;
     }
 
+    .topic-badge p {
+        font-size: 14px;
+    }
+
+    .topic-description p {
+        font-size: 13px;
+    }
+
+    .cfp-intro p {
+        font-size: 15.5px;
+    }
+
+    .cfp-intro p b {
+        font-size: 15.5px;
+    }
+
+    element.style {
+        font-size: 14px;
+    }
+
+    .submission-types {
+        gap: 5px;
+    }
+
+    .submission-types p {
+        font-size: 14px;
+    }
+
+    .submission-note p {
+        font-size: 14px;
+
+    }
+
+    .date-card p {
+        font-size: 14px;
+    }
+
+    .date-card .dates {
+        font-size: 14px;
+    }
+
+    .adv-title {
+        font-size: 14px;
+    }
+
+    .adv-text {
+        font-size: 14px;
+    }
+
+    .submission-section p {
+        font-size: 14px;
+    }
+
+    .submission-section li {
+        font-size: 14px;
+    }
+
+    .topic-card {
+        min-height: 200px;
+    }
+
 }
 
 /* ========== SMALL MOBILE (≤ 480px) ========== */
@@ -2985,4 +3156,24 @@ body {
     .date-section p {
         margin-top: 0px;
     }
+    .date-card p{
+        font-size: 13px;
+        gap: 0px;
+    }
+    .date-card .dates{
+        font-size: 14px;
+    }
+
+     /* .submission-section p {
+        font-size: 13px;
+    }
+
+     .submission-section li {
+        font-size: 13px;
+    }
+
+     .topic-badge p {
+        font-size: 12px;
+    } */
+
 }
