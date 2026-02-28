@@ -370,6 +370,10 @@ const scientificCommittee = [
                         name: "Prof. Neelarnab Dutta",
                         affiliation: "National Institute of Design Jorhat"
                     },
+                    {
+                        name: "Prof. Gaurav Vaidya",
+                        affiliation: "Indian Institute of Technology Jodhpur"
+                    },
                 ]
             },
             {
@@ -409,6 +413,10 @@ const scientificCommittee = [
                         name: "Prof. Swati Pal",
                         affiliation: "IDC School of Design, IIT Bombay"
                     },
+                    {
+                        name: "Prof. Prakash Kumar",
+                        affiliation: "Shiv Nadar University"
+                    },
                 ]
             },
             {
@@ -430,6 +438,10 @@ const scientificCommittee = [
                     {
                         name: "Prof. Sharmistha Banerjee",
                         affiliation: "Indian Institute of Technology Guwahati"
+                    },
+                    {
+                        name: "Prof. Vikash Kumar",
+                        affiliation: "Shiv Nadar University"
                     },
                 ]
             },
@@ -453,6 +465,10 @@ const scientificCommittee = [
                         name: "Prof. Ajeet Kumar",
                         affiliation: "Indian Institute of Technology Guwahati"
                     },
+                    {
+                        name: "Prof. Pranav Satpute",
+                        affiliation: "Indian Institute of Technology Hyderabad "
+                    },
                 ],
             },
             {
@@ -461,6 +477,10 @@ const scientificCommittee = [
                     {
                         name: "Prof. Pankaj Upadhyay",
                         affiliation: "Indian Institute of Technology Guwahati"
+                    },
+                     {
+                        name: "Prof. Shiv Kumar Verma",
+                        affiliation: "Indian Institute of Technology Jodhpur"
                     },
                 ]
             },
