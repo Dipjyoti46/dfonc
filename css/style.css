@@ -725,7 +725,7 @@ body {
     font-size: 72px;
     line-height: 1;
     color: #2e3f92;
-    margin-bottom: 23px;
+    margin-bottom: 7px;
 }
 
 .overview-content p {
@@ -807,7 +807,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     /* 99.625% */
 }
 
@@ -963,7 +963,7 @@ body {
     font-size: 60px;
     line-height: 1;
     color: #2e3f92;
-    margin-bottom: 50px;
+    margin-bottom: 21px;
 }
 
 .submission-types {
@@ -1021,7 +1021,7 @@ body {
     font-size: 60px;
     line-height: 1;
     color: #2e3f92;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .dates-list {
@@ -1060,7 +1060,7 @@ body {
     font-size: 60px;
     line-height: 1;
     color: #2e3f92;
-    margin-bottom: 40px;
+    margin-bottom: 17px;
 }
 
 .org-description {
@@ -1792,7 +1792,7 @@ body {
 /* ================= PREMIUM COLLABORATION SECTION ================= */
 
 .adv-section {
-    padding: 110px 0 90px;
+    padding: 70px 0 90px;
     position: relative;
 }
 
@@ -1831,24 +1831,27 @@ body {
 }
 
 .adv-collab {
-    color: #777;
-    font-size: 15px;
+    color: #777 !important;
+    font-size: 15px !important;
 }
 
 .adv-collab span {
     color: #2e3f92;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
+.adv-collab.sub-heading {
+    margin-bottom: 23px;
+}
 
 /* ================= MAIN GRID ================= */
 
-.adv-main-layout {
-    margin-top: 55px;
-    /* display: grid;
+/* .adv-main-layout { */
+/* margin-top: 55px; */
+/* display: grid;
     grid-template-columns: 1.6fr 0.8fr;
     gap: 80px; */
-}
+/* } */
 
 
 /* ================= LEFT FLOW ================= */
@@ -1862,7 +1865,7 @@ body {
 /* ================= ORGANIZING STRIP ================= */
 
 .adv-org-strip {
-    margin-top: 48px;
+    /* margin-top: 48px; */
     display: flex;
     align-items: center;
     gap: 14px;
@@ -3056,7 +3059,7 @@ body {
     }
 
     .date-card p {
-        font-size: 15.fpx;
+        font-size: 15px;
     }
 
     .date-card .dates {
@@ -3127,7 +3130,12 @@ body {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 427px) {
+
+    .adv-collab {
+        font-size: 10px !important;
+    }
+
     .adv-header h2 {
         font-size: 22px;
         margin-bottom: 12px;
@@ -3202,9 +3210,9 @@ body {
         line-height: 30px;
     }
 
-    .date-section p {
+    /* .date-section p {
         margin-top: 0px;
-    }
+    } */
 
     .date-card p {
         font-size: 13px;
@@ -3214,17 +3222,5 @@ body {
     .date-card .dates {
         font-size: 14px;
     }
-
-    /* .submission-section p {
-        font-size: 13px;
-    }
-
-     .submission-section li {
-        font-size: 13px;
-    }
-
-     .topic-badge p {
-        font-size: 12px;
-    } */
 
 }
