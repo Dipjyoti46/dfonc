@@ -1539,7 +1539,7 @@ body {
     font-size: 60px;
     line-height: 1;
     color: #2e3f92;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .submission-section p {
@@ -3008,7 +3008,7 @@ body {
     .important-dates h2,
     .submission-section h2 {
         font-size: 32px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         text-align: left;
     }
 
