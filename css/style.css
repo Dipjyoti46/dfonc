@@ -1607,7 +1607,7 @@ body {
 }
 
 .submission-section li {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     text-align: justify;
 }
 
@@ -1690,7 +1690,7 @@ body {
 }
 
 .submission-cate-section li {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     text-align: justify;
 }
 
@@ -2433,13 +2433,12 @@ body {
         padding: 50px 40px;
     }
 
-    .submission-section {
+    .submission-section,
+    .submission-cate-section {
         padding: 0 40px;
     }
 
-    .submission-section {
-        padding: 0 40px;
-    }
+ 
 
     .hero-content {
         padding: 100px 40px 0;
@@ -2559,7 +2558,7 @@ body {
     }
 
     .submission-section li {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .topic-card {
@@ -3060,9 +3059,9 @@ body {
         padding-left: 20px;
     }
 
-    .submission-section li {
+    /* .submission-section li {
         margin-bottom: 12px;
-    }
+    } */
 
     .dates-list {
         padding-left: 20px;
