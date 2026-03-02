@@ -823,6 +823,7 @@ body {
 
 .cfp-intro p b {
     color: #8D1A1A;
+    font-size: 15px;
 }
 
 .cfp-item {
@@ -979,7 +980,7 @@ body {
 .submission-type p {
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     color: #555;
     /* background: #ffffff00; */
 }
@@ -1003,7 +1004,7 @@ body {
 .submission-note p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 15px;
     line-height: 28px;
     color: #8D1A1A;
     margin: 0 auto;
@@ -1033,7 +1034,7 @@ body {
 .date-card p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 15px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -1042,7 +1043,7 @@ body {
 .date-card .dates {
     font-family: 'PT Sans', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 40px;
     padding-left: 10px;
     color: #333;
