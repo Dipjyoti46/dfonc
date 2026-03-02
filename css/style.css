@@ -1314,6 +1314,22 @@ body {
     transform: rotate(0deg);
     z-index: -1;
 }
+.types-submissions{
+    position: relative;
+}
+.types-submissions::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../images/images/bg_6.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;    }
 
 .papers-section-content {
     position: relative;
@@ -1459,7 +1475,44 @@ body {
     left: 0;
     right: 0;
     bottom: 0px;
-    background-image: url('../images/images/bg_1.png');
+    background-image: url('../images/images/bg_2.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+.submission--cate-container {
+    position: relative;
+}
+
+.submission--cate-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../images/images/bg_2.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+.submission-cate-container {
+    position: relative;
+}
+
+.submission-cate-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../images/images/bg_2.png');
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -1591,6 +1644,89 @@ body {
 }
 
 .submission-section a:hover {
+    color: #8D1A1A;
+    text-decoration: underline;
+}
+/* .submission--cate-container */
+
+.submission-cate-container {
+    padding: 50px 0;
+    background: transparent;
+}
+
+.submission--cate-section {
+    max-width: 1632px;
+    margin: 0 auto;
+    padding: 0 144px;
+}
+
+.submission-cate-container {
+    padding: 50px 0;
+    background: transparent;
+}
+
+.submission-cate-section {
+    max-width: 1632px;
+    margin: 0 auto;
+    padding: 0 144px;
+}
+
+.submission-cate-section h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    color: #2e3f92;
+    margin-bottom: 15px;
+}
+
+.submission-cate-section p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.submission-cate-section ol,
+.submission-cate-section ul {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 25px;
+    padding-left: 40px;
+}
+
+.submission-cate-section ol {
+    list-style-type: decimal;
+}
+
+.submission-cate-section ul {
+    list-style-type: disc;
+}
+
+.submission-cate-section li {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.submission-cate-section li b {
+    color: #8D1A1A;
+    font-weight: 700;
+}
+
+.submission-cate-section a {
+    color: #2e3f92;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.submission-cate-section a:hover {
     color: #8D1A1A;
     text-decoration: underline;
 }
@@ -3019,11 +3155,15 @@ body {
     .types-submissions,
     .organisation-section,
     .jury-section,
-    .submission-container {
+    .submission-cate-container {
         padding: 40px 20px;
     }
 
     .submission-section {
+        padding: 0 20px;
+    }
+
+    .submission-cate-section {
         padding: 0 20px;
     }
 
