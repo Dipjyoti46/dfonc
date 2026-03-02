@@ -360,7 +360,12 @@ const scientificCommittee = [
                     {
                         name: "Prof. Mohammad Shahid",
                         affiliation: "Indian Institute of Technology Hyderabad"
-                    }
+                    },
+                    {
+                        name: "Prof. Mriganka Madhukailya",
+                        affiliation: "Indian Institute of Technology Guwahati"
+                    },
+                    
                 ],
             },
             {
@@ -504,6 +509,11 @@ const scientificCommittee = [
                         name: "Dr. Soumen Das",
                         affiliation: "Indian Institute of Technology Guwahati"
                     },
+                    {
+                        name: "Prof. Abraham Cyril Issac",
+                        affiliation: "Indian Institute of Technology Guwahati"
+                    },
+                    
                 ]
             },
         ]
