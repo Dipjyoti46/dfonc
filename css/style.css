@@ -1519,6 +1519,20 @@ body {
     transform: rotate(0deg);
     z-index: -1;
 }
+.submission-cate-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../images/images/bg_2.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
+}
 
 .contact-section {
     position: relative;
