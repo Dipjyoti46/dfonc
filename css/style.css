@@ -20,7 +20,7 @@ body {
 .container {
     max-width: 1632px;
     margin: 0 auto;
-    padding: 0 144px;
+    padding: 50px 144px;
 }
 
 /* ========== BASE (Desktop) ========== */
@@ -722,7 +722,7 @@ body {
 .overview-content h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 7px;
@@ -731,7 +731,7 @@ body {
 .overview-content p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
     color: #000;
     text-align: left;
@@ -749,7 +749,7 @@ body {
 .overview-sidebar h3 {
     color: #314AA7;
     font-family: Archivo;
-    font-size: 50px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 59.7px;
@@ -796,14 +796,14 @@ body {
 /* Call for Papers Section */
 .call-for-papers {
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     background: transparent;
 }
 
 .call-for-papers h2 {
     color: #2e3f92;
     font-family: Archivo;
-    font-size: 69px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
@@ -846,7 +846,7 @@ body {
 
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 15px;
     line-height: 30px;
     color: #000;
     text-align: justify;
@@ -944,7 +944,7 @@ body {
 .topic-description p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.9;
     color: #3b3b3d;
     margin: 0;
@@ -960,7 +960,7 @@ body {
 .types-submissions h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 21px;
@@ -1018,7 +1018,7 @@ body {
 .important-dates h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 15px;
@@ -1057,7 +1057,7 @@ body {
 .organisation-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 17px;
@@ -1167,7 +1167,7 @@ body {
 .jury-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 50px;
@@ -1536,7 +1536,7 @@ body {
 .submission-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 15px;
@@ -1604,7 +1604,7 @@ body {
 .contact-section h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 50px;
@@ -1812,7 +1812,7 @@ body {
 .adv-header h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1;
     color: #2e3f92;
     margin-bottom: 50px;
@@ -2035,7 +2035,7 @@ body {
 }
 
 .organisation-section h2 {
-    font-size: 72px;
+    font-size: 40px;
     font-weight: 700;
     color: #2e3f92;
     margin-bottom: 40px;
@@ -2269,7 +2269,7 @@ body {
     }
 
     .adv-header h2 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     #emblem {
@@ -2312,7 +2312,7 @@ body {
     }
 
     .container {
-        padding: 0 40px;
+        padding: 50px 40px;
     }
 
     .submission-section {
@@ -2676,7 +2676,7 @@ body {
     .important-dates,
     .organisation-section,
     .jury-section {
-        padding: 60px 20px;
+        padding: 30px 20px;
     }
 
     .overview-content h2,
@@ -2695,7 +2695,7 @@ body {
     .cfp-item p,
     .date-card p,
     .org-description {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .jury-grid {
