@@ -2412,8 +2412,8 @@ body {
     }
 
     .menu-links a {
-        font-size: 17px;
-        margin-bottom: 16px;
+        font-size: 15px;
+        margin-bottom: 5px;
     }
 
     .menu-divider {
@@ -2621,9 +2621,9 @@ body {
     }
 
     .menu-links a {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 26px;
-        margin-bottom: 14px;
+        margin-bottom: 5px;
     }
 
     .menu-divider {
