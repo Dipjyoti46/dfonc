@@ -14,320 +14,171 @@
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=DM+Sans:wght@400;500&family=Inter:wght@300;400;500;600;700&family=PT+Sans:wght@400;700&family=Work+Sans:wght@400;500&display=swap"
         rel="stylesheet" />
 </head>
+
 <body>
+    <!-- Side Menu -->
+    <nav id="sideMenu" class="side-menu">
+        <button class="menu-close" onclick="toggleMenu()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6L18 18" stroke="#3f3f3f" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="menu-links">
+            <a href="index.html">HOME</a>
+            <a href="index.html#overview">Overview</a>
+            <a href="index.html#call-for-papers">Call For Papers</a>
+            <a href="index.html#types-of-submissions">Types of Submission</a>
+            <a href="index.html#submission">Submission Categories</a>
+            <a href="index.html#paper-submission">Paper Submission</a>
+            <a href="index.html#publication">INDIS Publication</a>
+            <a href="index.html#important-dates">Important Dates</a>
+            <a href="index.html#adw">Asian Vanguard Art & Design Award 2026</a>
+            <a href="index.html#organisation">Organisations</a>
+            <div class="menu-divider"></div>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="images/icons/Social Media_Card/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="images/icons/Social Media_Card/twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="images/icons/Social Media_Card/instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="images/icons/Social Media_Card/linkedin.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="images/icons/Social Media_Card/youtube.png" alt="YouTube" /></a>
+        </div>
+    </nav>
 
-    <main class="container">
-        <!-- Paper Categories Section -->
-        <section class="paper-categories-section">
-            <h2>Paper Submission Categories</h2>
-            <p>Choose the appropriate category for your submission. Each category has specific guidelines and requirements.</p>
-            
-            <div class="categories-grid">
-                <!-- Research Paper Category -->
-                <div class="topic-card">
-                    <div class="topic-badge">
-                        <p>Research Paper</p>
-                    </div>
-                    <div class="topic-description">
-                        <p>
-                            Original research contributions with empirical studies, theoretical frameworks, and comprehensive analysis in design and innovation.
-                        </p>
-                    </div>
-                    <div class="topic-apply">
-                        <a href="research-paper-form.html" class="apply-btn">Apply Now</a>
-                    </div>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header-bg">
+        <div class="container">
+            <h1 style="color: #2e3f92; font-family: Archivo; font-size: 48px; font-weight: 700; margin-bottom: 10px;">
+                Paper Submission Categories</h1>
+            <p style="color: #777; font-size: 15px; margin: 0;">
+                <span style="color: #2e3f92; font-weight: 600;">INDIS 2026</span> - International Conference on Design &
+                Innovation Studies
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="paper-categories-section">
+                <div class="content-section">
+                    <p style="margin-bottom: 30px; line-height: 1.7; text-align: center;">
+                        Choose the appropriate category for your submission. Each category has specific guidelines and
+                        requirements.
+                    </p>
                 </div>
 
-                <!-- Case Study Category -->
-                <div class="topic-card">
-                    <div class="topic-badge">
-                        <p>Case Study</p>
+                <div class="categories-grid">
+                    <!-- Research Paper Category -->
+                    <div class="topic-card">
+                        <div class="topic-badge">
+                            <p>Full Research Paper</p>
+                        </div>
+                        <div class="topic-description">
+                            <p>
+                                Original research contributions with empirical studies, theoretical frameworks, and
+                                comprehensive
+                                analysis in design and innovation.
+                            </p>
+                        </div>
+                        <div class="topic-apply">
+                            <a href="paper_pages/research_paper.html" class="apply-btn">Read More</a>
+                        </div>
                     </div>
-                    <div class="topic-description">
-                        <p>
-                            Real-world applications and practical implementations showcasing successful design projects and innovation strategies.
-                        </p>
-                    </div>
-                    <div class="topic-apply">
-                        <a href="case-study-form.html" class="apply-btn">Apply Now</a>
-                    </div>
-                </div>
-                <!-- Literature Review Category -->
-                <div class="topic-card">
-                    <div class="topic-badge">
-                        <p>Literature Review</p>
-                    </div>
-                    <div class="topic-description">
-                        <p>
-                            Comprehensive systematic reviews analyzing current state of knowledge in specific areas of design and innovation studies.
-                        </p>
-                    </div>
-                    <div class="topic-apply">
-                        <a href="literature-review-form.html" class="apply-btn">Apply Now</a>
-                    </div>
-                </div>
 
-                <!-- Short Paper Category -->
-                <div class="topic-card">
-                    <div class="topic-badge">
-                        <p>Short Paper</p>
+                    <!-- Case Study Category -->
+                    <div class="topic-card">
+                        <div class="topic-badge">
+                            <p>Case Study and Industry Paper</p>
+                        </div>
+                        <div class="topic-description">
+                            <p>
+                                Real-world applications and practical implementations showcasing successful design
+                                projects and
+                                innovation strategies.
+                            </p>
+                        </div>
+                        <div class="topic-apply">
+                            <a href="paper_pages/case_study.html" class="apply-btn">Read More</a>
+                        </div>
                     </div>
-                    <div class="topic-description">
-                        <p>
-                            Preliminary findings, work-in-progress reports, and emerging ideas that contribute to design and innovation discourse.
-                        </p>
+                    <!-- Literature Review Category -->
+                    <div class="topic-card">
+                        <div class="topic-badge">
+                            <p>Research-through-Design Contribution</p>
+                        </div>
+                        <div class="topic-description">
+                            <p>
+                                Knowledge generated through the act of designing, demonstrating how design activity
+                                produced generalizable insights.
+                            </p>
+                        </div>
+                        <div class="topic-apply">
+                            <a href="paper_pages/research_through_design.html" class="apply-btn">Read More</a>
+                        </div>
                     </div>
-                    <div class="topic-apply">
-                        <a href="short-paper-form.html" class="apply-btn">Apply Now</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="submission-info">
-                <h3>Need Help Choosing?</h3>
-                <p>If you're unsure which category best fits your submission, please review our <a href="submission_guidelines.html">detailed submission guidelines</a> or <a href="contact.html">contact us</a> for guidance.</p>
-            </div>
-        </section>
+                    <!-- Short Paper Category -->
+                    <div class="topic-card">
+                        <div class="topic-badge">
+                            <p>Poster / Short Paper</p>
+                        </div>
+                        <div class="topic-description">
+                            <p>
+                                Preliminary findings, work-in-progress reports, and emerging ideas that contribute to
+                                design and
+                                innovation discourse.
+                            </p>
+                        </div>
+                        <div class="topic-apply">
+                            <a href="paper_pages/short_papers_posters.html" class="apply-btn">Read More</a>
+                        </div>
+                    </div>
+
+            </section>
+        </div>
     </main>
-        <div class="submission--cate-container">
-      <section class="submission-cate-section" id="submission">
-        <h2>Submission Categories</h2>
-        <p class="adv-collab sub-heading">
-          <span>INDIS 2026</span> - International Conference on Design & Innovation Studies
-        </p>
-        <p>INDIS 2026 invites original contributions in four categories representing diverse forms of design and
-          innovation scholarship. Submissions should demonstrate rigor, clarity of contribution, and relevance to design
-          and innovation studies.</p>
-        <h3> 1. Full Research Papers (6 pages including references)</h3>
-        <p>Full Research Papers present <b>completed research with clear theoretical or empirical contributions</b> to
-          design
-          and innovation studies. Submissions should demonstrate methodological rigor and clearly articulate research
-          questions, methods, and findings.</p>
-        <h4>Typical Structure</h4>
-        <ol>
-          <li>Title and Abstract (150–250 words)</li>
-          <li>Keywords (4–6)</li>
-          <li>Introduction and Research Problem</li>
-          <li>Literature Review / Theoretical Background</li>
-          <li>Research Methodology</li>
-          <li>Results / Findings</li>
-          <li>Discussion</li>
-          <li>Contributions to Design and Innovation Studies</li>
-          <li>Limitations and Future Work</li>
-          <li>References</li>
-        </ol>
-        <h4>
-          Length
-        </h4>
-        <ol>
-          <li>Maximum <b>6 pages including references</b></li>
-          <li>Papers exceeding the page limit will be desk rejected.</li>
-        </ol>
-        <!-- 2 -->
-        <h3>2. Case Studies and Industry Papers (6 pages including references)</h3>
-        <p>Case Studies and Industry Papers present <b>documented real-world design or innovation projects</b> from
-          academia,
-          industry, government, or non-profit sectors. Submissions should focus on <b>practical insights and lessons
-            learned,</b> rather than theoretical development.</p>
-        <p>Pure marketing or product descriptions will not be accepted.</p>
-        <h4>Typical Structure</h4>
-        <ul>
-          <li>Title and Abstract (150–250 words)</li>
-          <li>Keywords (4–6)</li>
-          <li>Context and Problem Description</li>
-          <li>Stakeholders and Constraints</li>
-          <li>Approach and Process</li>
-          <li>Methods or Tools Used</li>
-          <li>Implementation</li>
-          <li>Outcomes and Evaluation</li>
-          <li>Lessons Learned</li>
-          <li>Implications for Practice</li>
-          <li>References (if applicable)</li>
-        </ul>
+    <footer class="footer">
+        <!-- TOP -->
+        <div class="footer-top">
+            <div class="footer-top-grid">
+                <!-- Logos -->
+                <div class="footer-logos">
+                    <img src="images/indis_logo.png" alt="Conference Logo" />
+                    <img src="images/Indis.png" alt="INDIS 2026" />
+                    <img src="images/icons/asiandw_logo.webp" alt="INDIS 2026" />
+                </div>
+                <!-- Description -->
+                <div class="footer-description">
+                    <p>
+                        International Conference on Design and Innovation Studies (INDIS
+                        2026) Department of Design, IIT Guwahati | September 2026
+                    </p>
+                </div>
+            </div>
+        </div>
 
-        <h4>
-          Length
-        </h4>
-        <ol>
-          <li>Maximum <b>6 pages including references</b></li>
-        </ol>
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            <span>© 2026 INDIS Conference | All Rights Reserved</span>
 
-        <!-- 3 -->
-        <h3>3. Research-through-Design Contributions (6 pages including references)</h3>
-        <p>Research-through-Design (RtD) Contributions present <b>knowledge generated through the act of designing.</b>
-          Submissions must demonstrate how design activity produced <b>generalizable knowledge,</b> not only artifacts or
-          design outcomes.</p>
-        <p>Pure design portfolios without research reflection will not be accepted.</p>
-        <h4>Typical Structure</h4>
-        <ul>
-          <li>Title and Abstract (150–250 words)</li>
-          <li>Keywords (4–6)</li>
-          <li>Research Question or Design Inquiry</li>
-          <li>Background and Related Work</li>
-          <li>Design Process</li>
-          <li>Artifacts or Prototypes</li>
-          <li>Reflection and Knowledge Contribution</li>
-          <li>Discussion</li>
-          <li>Limitations</li>
-          <li>References</li>
-        </ul>
-
-        <h4>
-          Important Requirement
-        </h4>
-        <p>Submissions must clearly state:</p>
-        <ol>
-          <li>What knowledge was produced</li>
-          <li>How the design process generated knowledge</li>
-          <li>Why this knowledge matters beyond the project</li>
-        </ol>
-
-        <h4>
-          Length
-        </h4>
-        <ol>
-          <li>Maximum <b>6 pages including references</b></li>
-        </ol>
-
-        <!-- 4 -->
-        <h3>4. Posters / Short Papers (3 pages including references)</h3>
-        <p>Posters present <b>early-stage research, emerging ideas, or focused contributions.</b> This category is intended for
-          <b>work-in-progress research and exploratory studies.</b> Accepted posters will be presented during the poster
-          session.</p>
-        <h4>Typical Structure</h4>
-        <ul>
-          <li>Title and Abstract (100–150 words)</li>
-          <li>Keywords (3–5)</li>
-          <li>Research Problem or Idea</li>
-          <li>Background</li>
-          <li>Approach</li>
-          <li>Preliminary Results or Expected Contributions</li>
-          <li>References</li>
-        </ul>
-        <h4>
-          Length
-        </h4>
-        <ol>
-          <li>Maximum <b>3 pages including references</b></li>
-        </ol>
-      </section>
-    </div>
-
-    <!-- Paper Submission -->
-    <div class="submission-container">
-      <section class="submission-section" id="paper-submission">
-        <h2>Paper Submission</h2>
-        <p class="adv-collab sub-heading">
-          <span>INDIS 2026</span> - International Conference on Design & Innovation Studies
-        </p>
-        <p>All submissions to <b>INDIS 2026 – International Conference on Design and Innovation Studies</b> must be made
-          electronically through the <b>EasyChair conference management system.</b></p>
-
-        <p>Authors are required to submit their manuscripts in PDF format through the official submission portal.
-          Submissions sent by email or other means will not be considered.</p>
-
-        <p>The EasyChair submission link will be provided on this page.</p>
-        <h3> Submission Process</h3>
-        <p>Authors should follow the steps below to submit their paper:</p>
-
-
-
-
-        <ol>
-          <li>Create or log in to an EasyChair account.</li>
-          <li>Select the appropriate submission category:</li>
-          <ul>
-            <li>Full Research Paper</li>
-            <li>Case Study and Industry Paper</li>
-            <li>Research-through-Design Contribution</li>
-            <li>Poster / Short Paper</li>
-          </ul>
-          <li>Enter the required metadata:</li>
-          <ul>
-            <li>Paper title</li>
-            <li>Abstract</li>
-            <li>Keywords</li>
-            <li>Author details and affiliations</li>
-          </ul>
-          <li>Upload the manuscript in PDF format.</li>
-          <li>Confirm and finalize the submission.</li>
-        </ol>
-        <p>Authors may update their submissions any time before the submission deadline.</p>
-        <h4>
-          Submission Requirements
-        </h4>
-        <ul>
-          <li>Papers must be written in <b>English</b></li>
-          <li>Manuscripts must be submitted in <b>PDF format</b></li>
-          <li>Submissions must follow the <b>INDIS 2026 formatting guidelines</b></li>
-          <li>Submissions must comply with the specified <b>page limits</b></li>
-          <li>Submissions must be <b>original and unpublished</b></li>
-          <li>Simultaneous submission to other conferences or journals is not permitted</li>
-        </ul>
-        <h4>
-          Review Process
-        </h4>
-        <p>
-          All submissions will undergo <b>peer review</b> by members of the Technical Program Committee and external
-          reviewers.
-        </p>
-        <p>Review criteria include:</p>
-        <ul>
-          <li>Relevance to the conference themes</li>
-          <li>Originality</li>
-          <li>Methodological rigor</li>
-          <li>Clarity of presentation</li>
-          <li>Contribution to design and innovation studies</li>
-        </ul>
-        <h4>
-          Important Note on Anonymization
-        </h4>
-        <p>
-          Submissions should be prepared for <b>double-blind review.</b>
-        </p>
-        <p>Authors should ensure that:</p>
-        <ul>
-          <li>Author names and affiliations are removed from the manuscript</li>
-          <li>Self-references are anonymized where necessary</li>
-          <li>Document properties do not reveal author identity</li>
-        </ul>
-        <p>Detailed instructions for preparing anonymized submissions will be provided.</p>
-      </section>
-    </div>
-
-    <!-- INDIS Publication -->
-    <div class="submission-container" id="publication">
-      <section class="submission-section">
-        <h2>INDIS Publication</h2>
-        <p class="adv-collab sub-heading">
-          <span>INDIS 2026</span> - International Conference on Design & Innovation Studies
-        </p>
-        <p>
-          All accepted and presented papers at <b>INDIS 2026 – International Conference on Design and Innovation
-            Studies</b> will be published in the <b>conference proceedings by Springer,</b> subject to compliance with
-          the publisher’s submission and formatting requirements.
-        </p>
-        <p>Authors of accepted papers will be required to revise their manuscripts in accordance with the <b>Springer
-            proceedings format and submission guidelines,</b> which will be provided at a later stage on the conference
-          website.</p>
-        <p>
-          In addition to the proceedings, a <b>limited number of high-quality papers</b> will be shortlisted by the
-          Technical Program Committee and invited for <b>extended submission to an <b>international peer-reviewed
-              journal</b>. Details of the journal</b> and submission process will be <b>announced separately.</b>
-        </p>
-        <h4>
-          Important Notes
-        </h4>
-        <ul>
-          <li>Only <b>registered and presented papers</b> will be included in the Springer proceedings.</li>
-          <li>Papers must comply with the <b>Springer formatting requirements</b> (to be updated).</li>
-          <li>Invited journal submissions will undergo <b>independent peer review</b> according to the journal’s
-            policies.</li>
-          <li>Acceptance in the conference <b>does not guarantee journal publication.</b></li>
-        </ul>
-      </section>
-
-    </div>
+            <div class="footer-socials">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
