@@ -1623,10 +1623,10 @@ body {
     transition: color 0.3s ease;
 }
 
-.submission-section a:hover {
+/* .submission-section a:hover {
     color: #8D1A1A;
     text-decoration: underline;
-}
+} */
 /* .submission--cate-container */
 
 .submission-cate-container {

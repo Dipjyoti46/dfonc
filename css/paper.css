@@ -1,706 +1,347 @@
-/* Paper Submission Page Styles */
-/* Paper Categories Section */
+/* =================================================
+   PAPER SUBMISSION SECTION
+   ================================================= */
+
 .paper-categories-section {
-    margin-top: 60px;
+    padding: 20px 0;
 }
+
+.page-title {
+    color: #3041a0;
+}
+
+.container {
+    padding-bottom: 0px;
+}
+
+.paper {
+    padding-top: 0px;
+}
+
+.page-subtitle {
+    padding: 20px 0px;
+}
+
+/* Section Heading */
 
 .paper-categories-section h2 {
     color: #3041a0;
-    margin-bottom: 16px;
     font-size: 32px;
     font-weight: 600;
-    text-align: left;
+    margin-bottom: 16px;
 }
 
-.paper-categories-section > p {
+.paper-categories-section>p {
     color: #666;
-    margin-bottom: 48px;
-    line-height: 1.7;
-    text-align: left;
     max-width: 600px;
-    margin-left: 0;
-    margin-right: auto;
+    line-height: 1.7;
+    margin-bottom: 48px;
 }
 
-.categories-grid {
+.section-heading {
+    padding: 20px 0px;
+}
+
+.section-heading.h2 {
+    color: #3041a0;
+}
+
+.section-heading.h2::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2.5px;
+    background: #2e3f92;
+    margin-top: 10px;
+}
+
+
+/* =================================================
+   GRID LAYOUT
+   ================================================= */
+
+.paper-categories-section .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 32px;
-    margin-bottom: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
 }
 
-.category-card {
-    position: relative;
-    background: #fff;
-    border-radius: 16px;
-    padding: 32px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(48, 65, 160, 0.1);
-    transition: all 0.3s ease;
+
+/* =================================================
+   CARD DESIGN
+   ================================================= */
+
+.paper-categories-section .topic-card {
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+
     display: flex;
     flex-direction: column;
-    height: 100%;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
 }
 
-.category-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-    border-color: rgba(48, 65, 160, 0.2);
+.paper-categories-section .topic-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
 }
 
-.category-card.featured {
-    border: 2px solid #3041a0;
-    position: relative;
+
+/* =================================================
+   CARD HEADER
+   ================================================= */
+
+.paper-categories-section .topic-badge {
+    background: #f6f7fb;
+    padding: 22px 26px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.featured-badge {
-    position: absolute;
-    top: -12px;
-    right: 20px;
-    background: linear-gradient(135deg, #3041a0, #4f5bd5);
-    color: white;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 12px;
+.paper-categories-section .topic-badge p {
+    font-size: 20px;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    color: #2e3f92;
+    margin: 0;
 }
 
-.card-icon {
-    margin-bottom: 20px;
-}
 
-.category-card h3 {
-    color: #3041a0;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    line-height: 1.3;
-}
+/* =================================================
+   CARD DESCRIPTION
+   ================================================= */
 
-.category-card p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.paper-categories-section .topic-description {
+    padding: 26px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #555;
+
     flex-grow: 1;
 }
 
-.category-features {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 24px;
+
+/* =================================================
+   CARD BUTTON
+   ================================================= */
+
+.paper-categories-section .topic-apply {
+    padding: 24px;
 }
 
-.category-features li {
-    color: #555;
-    font-size: 14px;
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
-}
+.paper-categories-section .apply-btn {
+    display: block;
+    width: 100%;
 
-.category-features li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: #3041a0;
-    font-weight: bold;
-}
+    text-align: center;
 
-.themes-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-}
+    background: #5f6fc7;
+    color: #ffffff;
 
-.theme-tag {
-    background: rgba(48, 65, 160, 0.08);
-    color: #3041a0;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
+    padding: 12px;
+
+    border-radius: 8px;
+
     font-weight: 500;
-    letter-spacing: 0.3px;
+
+    transition: 0.25s ease;
+}
+
+.paper-categories-section .apply-btn:hover {
+    background: #2e3f92;
+}
+
+
+/* =================================================
+   REQUIREMENTS GRID
+   ================================================= */
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+
+    margin: 30px 0;
+}
+
+.requirement-card {
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+
+    padding: 24px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+.requirement-card h4 {
+    color: #2e3f92;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+
+/* =================================================
+   SUBMISSION FORM
+   ================================================= */
+
+.paper-submission-form {
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.half-width {
+    flex: 1;
+}
+
+
+/* =================================================
+   FORM BUTTON
+   ================================================= */
+
+.form-actions {
+    margin-top: 25px;
 }
 
 .submit-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 28px;
-    background: #3041a0;
-    color: white;
-    text-decoration: none;
-    border-radius: 12px;
+    background: #2e3f92;
+    color: #ffffff;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
     font-weight: 500;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    margin-top: auto;
-    min-height: 52px;
-    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
 }
 
 .submit-btn:hover {
-    background: #2733a4;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(48, 65, 160, 0.3);
-    color: white;
+    background: #1d2d6f;
 }
 
-.featured-btn {
-    background: linear-gradient(135deg, #3041a0, #4f5bd5);
-    box-shadow: 0 4px 16px rgba(48, 65, 160, 0.2);
+/* PAGE ONLY FIX (does NOT affect other pages) */
+
+.requirements-grid {
+    display: block;
+    margin-top: 20px;
 }
 
-.featured-btn:hover {
-    background: linear-gradient(135deg, #2733a4, #4654d1);
-    box-shadow: 0 8px 24px rgba(48, 65, 160, 0.4);
-}
-
-.submission-info {
-    background: #f8f9fa;
-    padding: 32px;
-    border-radius: 16px;
-    border: 1px solid rgba(48, 65, 160, 0.1);
-    text-align: center;
-}
-
-.submission-info h3 {
-    color: #3041a0;
-    margin-bottom: 12px;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.submission-info p {
-    color: #666;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.submission-info a {
-    color: #3041a0;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.submission-info a:hover {
-    text-decoration: underline;
-    color: #2733a4;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .categories-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 24px;
-    }
-    
-    .category-card {
-        padding: 24px;
-    }
-}
-
-@media (max-width: 768px) {
-    .categories-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .paper-categories-section h2 {
-        font-size: 28px;
-    }
-    
-    .category-card {
-        padding: 20px;
-    }
-    
-    .category-card h3 {
-        font-size: 20px;
-    }
-    
-    .submission-info {
-        padding: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .paper-categories-section {
-        margin-top: 40px;
-    }
-    
-    .categories-grid {
-        gap: 16px;
-    }
-    
-    .category-card {
-        padding: 16px;
-    }
-    
-    .submit-btn {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-}
-/* Paper Categories Section */
-.paper-categories-section {
-    margin-top: 60px;
-}
-
-.paper-categories-section h2 {
-    color: #3041a0;
-    margin-bottom: 16px;
-    font-size: 32px;
-    font-weight: 600;
-    text-align: left;
-}
-
-.paper-categories-section > p {
-    color: #666;
-    margin-bottom: 48px;
-    line-height: 1.7;
-    text-align: left;
-    max-width: 600px;
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 60px;
-}
-
-/* Apply Button Styling */
-.topic-apply {
-    padding: 16px 24px 24px 30px;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-    margin-top: auto;
-}
-
-.apply-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    background: #5f6fc7e8;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    letter-spacing: 0.3px;
-    width: 100%;
-}
-
-.apply-btn:hover {
-    background: #2733a4;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(48, 65, 160, 0.3);
-    color: white;
-}
-
-.submission-info {
-    background: #f8f9fa;
-    padding: 32px;
-    border-radius: 16px;
-    border: 1px solid rgba(48, 65, 160, 0.1);
-    text-align: center;
-}
-
-.submission-info h3 {
-    color: #3041a0;
-    margin-bottom: 12px;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.submission-info p {
-    color: #666;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.submission-info a {
-    color: #3041a0;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.submission-info a:hover {
-    text-decoration: underline;
-    color: #2733a4;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-}
-
-@media (max-width: 768px) {
-    .categories-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .paper-categories-section h2 {
-        font-size: 28px;
-    }
-    
-    .topic-apply {
-        padding: 14px 20px 20px 24px;
-    }
-    
-    .apply-btn {
-        padding: 8px 16px;
-        font-size: 13px;
-    }
-    
-    .submission-info {
-        padding: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .paper-categories-section {
-        margin-top: 40px;
-    }
-    
-    .categories-grid {
-        gap: 16px;
-    }
-    
-    .paper-categories-section h2 {
-        font-size: 24px;
-    }
-    
-    .topic-apply {
-        padding: 12px 16px 16px 20px;
-    }
-    
-    .apply-btn {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-}
-
-/* ==== IMPROVED STRUCTURE STYLES ==== */
-
-/* Page Header Styling */
-.page-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #f0f0f0;
-}
-
-.page-header h1 {
-    color: #3041a0;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.page-description {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 800px;
-    margin: 1rem auto;
-    line-height: 1.6;
-}
-
-.note {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
-    border-radius: 6px;
-    padding: 1rem;
-    margin: 1rem auto;
-    max-width: 600px;
-    color: #856404;
-    font-size: 0.95rem;
-}
-
-/* Form Section Styling */
-.submission-form-section {
-    background: #f8f9fa;
-    padding: 3rem 0;
-    margin: 2rem 0;
-}
-
-.form-section {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e9ecef;
-}
-
-.form-section:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.form-section h3 {
-    color: #3041a0;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #3041a0;
-    display: inline-block;
-}
-
-/* Improved submission section styling */
-.section-intro {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-.info-box {
-    background: #e8f4fd;
-    border: 1px solid #b3d7f0;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    color: #0f3460;
-}
-
-.submission-steps {
-    counter-reset: step-counter;
-    padding-left: 0;
-    list-style: none;
-}
-
-.submission-steps > li {
-    counter-increment: step-counter;
-    position: relative;
-    padding: 1rem 0 1rem 3rem;
-    border-left: 2px solid #e9ecef;
-    margin-bottom: 1rem;
-}
-
-.submission-steps > li::before {
-    content: counter(step-counter);
-    position: absolute;
-    left: -1.5rem;
-    background: #3041a0;
-    color: white;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.submission-steps > li:last-child {
-    border-left: none;
-}
-
-/* Requirements section styling */
-.requirements-section {
-    margin: 3rem 0;
-}
-
-.requirements-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-.requirement-column h4 {
-    color: #3041a0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #dee2e6;
-    padding-bottom: 0.5rem;
-}
-
-/* Review criteria grid */
-.review-section {
-    margin: 3rem 0;
-}
-
-.criteria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.criteria-item {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #3041a0;
-}
-
-.criteria-item h5 {
-    color: #3041a0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.criteria-item p {
-    color: #666;
-    margin: 0;
-    font-size: 0.95rem;
-}
-
-/* Anonymization section */
-.anonymization-section {
-    margin: 3rem 0;
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 8px;
-    border: 1px solid #dee2e6;
-}
-
-.anonymization-checklist h4 {
-    color: #3041a0;
-    margin-bottom: 1rem;
-}
-
-.anonymization-checklist ul {
-    list-style: none;
+.requirement-card {
+    background: none;
+    border: none;
+    box-shadow: none;
     padding: 0;
+    margin-bottom: 35px;
 }
 
-.anonymization-checklist li {
-    padding: 0.5rem 0;
-    color: #555;
-}
-
-/* Publication details */
-.publication-details {
-    margin: 2rem 0;
-}
-
-.publication-requirements {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-top: 2rem;
-}
-
-.publication-requirements h3 {
-    color: #3041a0;
-    margin-bottom: 1rem;
-}
-
-/* Enhanced Paper Submission Form */
-.paper-submission-form {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 3rem;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive improvements */
-@media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 2rem;
-    }
-    
-    .submission-form-section {
-        padding: 2rem 0;
-    }
-    
-    .paper-submission-form {
-        padding: 2rem;
-    }
-    
-    .submission-steps > li {
-        padding-left: 2.5rem;
-    }
-    
-    .submission-steps > li::before {
-        left: -1.25rem;
-        width: 1.8rem;
-        height: 1.8rem;
-    }
-    
-    .requirements-columns {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .criteria-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .anonymization-section {
-        padding: 1.5rem;
-    }
-}
-
-/* ==== CASE STUDY PAGE SPECIFIC STYLES ==== */
-
-.page-header-bg {
-    background: linear-gradient(135deg, rgba(46, 63, 146, 0.12), rgba(141, 26, 26, 0.10));
-    padding: 120px 0 80px 0;
-    position: relative;
-}
-
-.content-section {
-    padding: 50px 0;
-}
-
-.simple-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.simple-list li {
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
-    line-height: 1.6;
-}
-
-.simple-list li::before {
-    content: "•";
-    color: #2e3f92;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
+.requirement-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
 }
 
 .numbered-list {
-    padding-left: 20px;
-    margin: 20px 0;
+    padding-left: 22px;
+    line-height: 1.8;
 }
 
-.numbered-list li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+.simple-list {
+    padding-left: 22px;
+    line-height: 1.8;
 }
 
-.case-study-h3 {
-    color: #2e3f92;
-    font-weight: 600;
-    font-size: 20px;
-    margin: 30px 0 15px 0;
+/* Footer */
+
+.footer.page {
+    margin-top: 100px;
 }
 
-.section-number {
-    color: #2e3f92;
-    font-weight: 700;
-    font-size: 24px;
+
+/* =================================================
+   RESPONSIVE DESIGN
+   ================================================= */
+
+@media (max-width: 1024px) {
+
+    .paper-categories-section .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .paper-categories-section .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .paper-categories-section h2 {
+        font-size: 28px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .paper-submission-form {
+        padding: 28px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .paper-categories-section {
+        padding: 60px 0;
+    }
+
 }
