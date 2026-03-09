@@ -1,0 +1,302 @@
+/* =================================================
+   REGISTRATION PAGE STYLES
+   ================================================= */
+
+/* Page Title */
+.page-title {
+    color: #3041a0;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Section Headings */
+.section-heading {
+    color: #3041a0;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+    position: relative;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2.5px;
+    background: #3041a0;
+    margin-top: 8px;
+}
+
+/* Introduction Section */
+.registration-intro {
+    margin-bottom: 30px;
+}
+
+.registration-intro p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Registration Categories */
+.registration-categories {
+    margin-bottom: 40px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.category-card {
+    background: #ffffff;
+    border: 1px solid rgba(48, 65, 160, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-color: rgba(48, 65, 160, 0.2);
+}
+
+.category-card h3 {
+    color: #3041a0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.category-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Subcategories */
+.subcategories {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subcategories h4 {
+    color: #3041a0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Fee Structure Tables */
+.fee-structure {
+    margin-bottom: 50px;
+}
+
+.fee-tables {
+    margin-top: 20px;
+}
+
+.fee-tables h3 {
+    color: #3041a0;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+}
+
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(48, 65, 160, 0.1);
+}
+
+.fee-table thead {
+    background: linear-gradient(135deg, #3041a0, #2533a0);
+}
+
+.fee-table thead th {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 18px 16px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.fee-table thead th:first-child {
+    border-top-left-radius: 12px;
+    text-align: left;
+}
+
+.fee-table thead th:not(:first-child) {
+    text-align: center;
+}
+
+.fee-table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.fee-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.fee-table tbody tr:hover {
+    background-color: #f8f9fb;
+}
+
+.fee-table tbody tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+.fee-table tbody tr:nth-child(even):hover {
+    background-color: #f0f2f5;
+}
+
+.fee-table tbody td {
+    padding: 16px;
+    border-bottom: 1px solid #e8eaed;
+    color: #3f3f3f;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.fee-table tbody td:first-child {
+    font-weight: 500;
+    color: #2d2d2d;
+    text-align: left;
+}
+
+.fee-table tbody td:not(:first-child) {
+    text-align: center;
+    font-weight: 600;
+    color: #3041a0;
+}
+
+.fee-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Registration Includes */
+.registration-includes {
+    margin-bottom: 40px;
+}
+
+/* Author Policy */
+.author-policy {
+    margin-bottom: 40px;
+}
+
+/* Registration Process */
+.registration-process {
+    margin-bottom: 40px;
+}
+
+.process-note {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    color: #856404;
+    font-weight: 500;
+}
+
+/* Important Notes */
+.important-notes {
+    margin-bottom: 40px;
+}
+
+/* Accommodation Section */
+.accommodation {
+    margin-bottom: 40px;
+}
+
+.accommodation p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 4px;
+}
+
+.accommodation-notes {
+    background: #f8f9fb;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accommodation-notes h4 {
+    color: #3041a0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+p{
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .section-heading {
+        font-size: 22px;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .category-card {
+        padding: 20px;
+    }
+    
+    .fee-table {
+        font-size: 12px;
+    }
+    
+    .fee-table thead th,
+    .fee-table tbody td {
+        padding: 12px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fee-table {
+        font-size: 11px;
+    }
+    
+    .fee-table thead th,
+    .fee-table tbody td {
+        padding: 10px 6px;
+    }
+    
+    .category-card {
+        padding: 15px;
+    }
+    
+    .subcategories,
+    .accommodation-notes {
+        padding: 15px;
+    }
+}
