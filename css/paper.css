@@ -302,6 +302,16 @@ p{
     line-height: 1.8;
 }
 
+/* Content Section for better alignment */
+.content-section {
+    margin: 40px 0;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 24px;
+}
+
 /* Footer */
 
 .footer.page {
