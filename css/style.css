@@ -1485,6 +1485,7 @@ body {
     transform: rotate(0deg);
     z-index: -1;
 }
+
 .submission-cate-container::after {
     content: '';
     position: absolute;
@@ -1557,7 +1558,7 @@ body {
 
 /* ================= SUBMISSION SECTION ================= */
 
-.container.submission{
+.container.submission {
     padding: 0px;
 }
 
@@ -2364,10 +2365,54 @@ body {
     row-gap: 13px;
 }
 
+/* ================= REGISTRATION ================= */
+.registration-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2e3f92;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
 
+.registration-section {
+    border-top: 1px solid #e5e7eb;
+}
 
+.registration-box {
+    max-width: 720px;
+}
 
+.registration-text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 28px;
+}
 
+.registration-btn {
+
+    display: inline-block;
+    padding: 12px 32px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #fff;
+    background: #2e3f92;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition: all .25s ease;
+}
+
+.registration-btn:hover {
+    background: #1f2f7a;
+    transform: translateY(-2px);
+}
 
 
 
@@ -2442,7 +2487,7 @@ body {
         padding: 0 40px;
     }
 
- 
+
 
     .hero-content {
         padding: 100px 40px 0;
