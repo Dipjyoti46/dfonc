@@ -21,9 +21,9 @@
 .page-subtitle {
     padding: 20px 0px;
 }
-p{
+/* p{
     padding: 20px 0px;
-}
+} */
 
 /* Section Heading */
 
@@ -36,9 +36,9 @@ p{
 
 .paper-categories-section>p {
     color: #666;
-    max-width: 600px;
+    /* max-width: 600px; */
     line-height: 1.7;
-    margin-bottom: 48px;
+    margin-bottom: 25px;
 }
 
 .section-heading {
