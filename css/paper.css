@@ -1,3 +1,39 @@
+/* Close Button (Top Right) */
+
+/* Floating Close Button */
+
+.page-close-btn {
+
+    position: fixed;
+    top: 24px;
+    right: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+
+    z-index: 9999;
+
+    transition: all 0.25s ease;
+
+}
+
+.page-close-btn:hover {
+
+    background: rgba(46,63,146,0.08);
+
+    transform: rotate(90deg);
+
+}
 /* =================================================
    PAPER SUBMISSION SECTION
    ================================================= */
