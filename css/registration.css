@@ -247,7 +247,58 @@
 p{
     padding: 10px 0;
 }
+/* HIGHLIGHT STRIP */
+.registration-action.highlight {
+    margin-top: 25px;
+    padding: 18px 22px;
+    background: #f8f9ff;
+    border-left: 4px solid #2e3f92;
+    border-radius: 6px;
+}
 
+/* TEXT */
+.action-text {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* STRONG LINK */
+.registration-link.strong {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e3f92;
+    text-decoration: none;
+    margin: 6px 0;
+    transition: 0.2s ease;
+}
+
+/* UNDERLINE ANIMATION */
+.registration-link.strong::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: #2e3f92;
+    margin-top: 3px;
+    transition: 0.25s ease;
+}
+
+.registration-link.strong:hover::after {
+    width: 100%;
+}
+
+.registration-link.strong:hover {
+    opacity: 0.85;
+}
+
+/* NOTE */
+.action-note {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #666;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
