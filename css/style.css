@@ -3399,10 +3399,10 @@ body {
 .date-card.expired {
     opacity: 0.6; /* subtle fade */
     text-decoration: line-through;
-    color: #888; /* optional muted color */
+    
 }
 
 .date-card.expired .dates {
     text-decoration: line-through;
-    color: #888; /* optional muted color */
+    
 }
