@@ -408,7 +408,7 @@ const scientificCommittee = [
                 ]
             },
             {
-                title: "Track 5: Human Factors & Ergonomic",
+                title: "Track 5: Human Factors And Ergonomics",
                 chairs: [
                     {
                         name: "Prof. Urmi Ravindra Salve",
